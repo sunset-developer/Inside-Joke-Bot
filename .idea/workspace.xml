@@ -2131,10 +2131,8 @@
       <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/share/doc/youtube_dl/README.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/share/man/man1/youtube-dl.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/info/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/info/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2245,7 +2243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592257540055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1592258356464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592258356464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

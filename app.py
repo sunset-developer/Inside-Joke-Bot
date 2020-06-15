@@ -20,8 +20,9 @@ async def on_ready():
 async def on_message(message):
     if message.author != bot.user:
         if not message.content[0] == COMMAND_PREFIX:
-            await horny_check(message)
             await joke_check(message)
+            await card_check(message)
+            await horny_check(message)
         else:
             await bot.process_commands(message)
 
@@ -44,6 +45,12 @@ async def horny_check(message):
                 'Herpes', 'AIDS', 'Warts', 'HPV', 'Syphillis', 'Vaginal Yeast', 'Nothing']
         await message.channel.send('{0.author.name} smashed tf out of {1.name} and contracted *{2}*'
                                    .format(message, random.choice(message.guild.members), random.choice(stds)))
+
+
+# Easter egg
+async def card_check(message):
+    if 'card' in message.content.lower():
+        await message.channel.send('https://allbad.cards/')
 
 
 bot.add_cog(UtilCog(bot))
