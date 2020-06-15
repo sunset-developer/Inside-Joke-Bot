@@ -11,10 +11,6 @@ from db.mysql import create_session
 from core.model import JokeNotFoundException, YTDLSource
 
 
-def _encode(text):
-    return text.encode('ascii', 'ignore').decode('ascii')
-
-
 class JokeCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -31,15 +27,6 @@ class JokeCog(commands.Cog):
         if joke is None:
             raise JokeNotFoundException
         return joke
-
-    async def play(self, joke, channel):
-        try:
-            filename, player = await YTDLSource.from_url(joke.audio)
-            if self.voice_chat is None:
-                self.voice_chat = await channel.connect()
-            self.voice_chat.play(player, after=lambda e: os.remove(filename))
-        except DownloadError:
-            pass
 
     @commands.command()
     async def submit(self, ctx, trigger_arg, joke_arg, audio=None):
@@ -107,17 +94,23 @@ class JokeCog(commands.Cog):
             print(exc)
             await ctx.send(':x: Fatal Error:\n ' + exc)
 
+    async def play(self, joke, channel):
+        filename, player = await YTDLSource.from_url(joke.audio)
+        if self.voice_chat is None:
+            self.voice_chat = await channel.connect()
+        self.voice_chat.play(player, after=lambda e: os.remove(filename))
 
-@commands.command()
-async def stop(self, ctx):
-    self.voice_chat.stop()
+
+    @commands.command()
+    async def stop(self, ctx):
+        self.voice_chat.stop()
 
 
-@commands.command()
-async def leave(self, ctx):
-    self.voice_chat.stop()
-    await self.voice_chat.disconnect()
-    self.voice_chat = None
+    @commands.command()
+    async def leave(self, ctx):
+        self.voice_chat.stop()
+        await self.voice_chat.disconnect()
+        self.voice_chat = None
 
 
 class UtilCog(commands.Cog):
