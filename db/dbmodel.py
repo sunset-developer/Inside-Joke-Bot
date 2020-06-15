@@ -28,27 +28,21 @@ class Joke(BaseModel):
     author = Column(String)
     author_id = Column(String)
     trigger = Column(String)
-    target = Column(String)
     joke = Column(String)
+    audio = Column(String)
 
-    def __init__(self, author, trigger, joke, target, parent_uid):
+    def __init__(self, author, trigger, joke, parent_uid, audio):
         super().__init__(parent_uid)
         self.trigger = trigger.translate(str.maketrans('', '', string.punctuation))
         self.joke = joke[:200]
         self.author = author.name
         self.author_id = author.id
-        self.target = target.translate(str.maketrans('', '', string.punctuation)) if target is not None else None
+        self.audio = audio
 
     def __str__(self):
         return ">>> :triangular_flag_on_post: **Trigger**: `{0}`  \n" \
-               ":fire: **Joke**: `{1}` \n" \
-               ":pencil: **Author**: `{4}`\n" \
-               ":alarm_clock: **Time (UTC)**: `{3}` \n" \
-               ":desktop: **UID**: `{5}`" \
-            .format(self.trigger, self.joke, self.uid, self.date_updated, self.author, self.uid)
-
-
-class JokeNotFoundException(Exception):
-    def __init__(self):
-        exc_msg = ':x: **Joke not found or insufficient permission**'
-        super(JokeNotFoundException, self).__init__(exc_msg)
+               ":fire: **Joke**: {1}\n" \
+               ":pencil: **Author**: {2}\n" \
+               ":alarm_clock: **Time (UTC)**: {3}\n" \
+               ":speaker: **Audio**: {4}" \
+            .format(self.trigger, self.joke, self.author, self.date_updated, self.audio)

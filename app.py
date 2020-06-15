@@ -2,13 +2,13 @@ import random
 import string
 
 from discord.ext import commands
-
-from cog import UserJokeCog, UtilCog
-from config import TOKEN, COMMAND_PREFIX
+from db.dbmodel import Joke
 from db.mysql import create_session
-from model import Joke
+from core.cog import JokeCog, UtilCog
+from core.config import TOKEN, COMMAND_PREFIX
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX, help_command=None)
+joke_cog = JokeCog(bot)
 
 
 @bot.event
@@ -29,12 +29,12 @@ async def on_message(message):
 async def joke_check(message):
     db_session = create_session()
     with db_session.begin():
-        for joke in sorted(db_session.query(Joke).filter(Joke.active, Joke.parent_uid == message.guild.id).all(),
-                           key=lambda j: len(j.trigger.split(' ')), reverse=True):
+        jokes = db_session.query(Joke).filter(Joke.active, Joke.parent_uid == message.guild.id).all()
+        for joke in sorted(jokes, key=lambda j: len(j.trigger.split(' ')), reverse=True):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
-                if joke.target is None or joke.target == str(message.author.id):
-                    await message.channel.send(joke.joke)
-                    return
+                await message.channel.send(joke.joke)
+                if joke.audio is not None:
+                    await joke_cog.play(joke, message.author.voice.channel)
 
 
 # Easter egg
@@ -47,5 +47,5 @@ async def horny_check(message):
 
 
 bot.add_cog(UtilCog(bot))
-bot.add_cog(UserJokeCog(bot))
+bot.add_cog(joke_cog)
 bot.run(TOKEN, bot=True)

@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ijbot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/changes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/mysql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/help.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/model.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
@@ -551,30 +538,6 @@
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gazpacho/get.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gazpacho/soup.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gazpacho/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino-1.0.1.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/aiocontextvars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/crud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/declarative.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/dialects/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/dialects/asyncpg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/dialects/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/ext/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/ext/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/ext/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/json_support.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/strategies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/gino/transaction.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/idna-2.9.dist-info/INSTALLER" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/idna-2.9.dist-info/LICENSE.rst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/idna-2.9.dist-info/METADATA" afterDir="false" />
@@ -2171,6 +2134,13 @@
       <change afterPath="$PROJECT_DIR$/venv/share/doc/youtube_dl/README.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/share/man/man1/youtube-dl.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/info/changes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/info/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/dbmodel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2205,13 +2175,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Astronomy" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/ijbot" />
-      <recent name="$PROJECT_DIR$/ijbot/lib/licenses" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ijbot/prettyhelp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/main" />
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/resources/info" />
+      <recent name="$PROJECT_DIR$/db" />
+      <recent name="$PROJECT_DIR$/'" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2265,6 +2237,14 @@
       <option name="presentableId" value="Default" />
       <updated>1591212294219</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1592240222677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592240222677</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -2272,34 +2252,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cog.py</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/core/cog.py</url>
+          <line>43</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cog.py</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/core/cog.py</url>
+          <line>63</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cog.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
