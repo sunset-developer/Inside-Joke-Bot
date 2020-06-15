@@ -1,0 +1,10 @@
+****Inside Joke V0.4 Beta****
+**Notice:** `You must be the author of or have manage messages to edit or delete an existing joke.`
+~~---------------~~:tools: Commands :tools:~~---------------~~
+**Argument Key:** `[Mandatory] (Optional)`
+>>> **$submit** `[trigger] [joke] (mention)`
+**$append** `[trigger/uid] [joke]`
+**$update** `[trigger/uid] [joke] (mention)`
+**$delete** `[trigger/uid]`
+**$get** `[trigger/uid]`
+**$changes**
