@@ -16,7 +16,7 @@ $stop <br />
 $leave <br />
 
 
-## Usage
+## Usage Examples
 
 ![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga1.PNG)
 
