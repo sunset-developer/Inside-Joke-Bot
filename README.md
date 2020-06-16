@@ -6,7 +6,7 @@ This bot is open source so us together can bring the best experience we can to y
 ## About 
 
 ## Usage 
-Notice: You must be the author of or have manage messages to edit or delete an existing joke.
+Notice: You must be the author of or have manage messages to edit or delete an existing joke. <br />
 ---------------:tools: Commands :tools:--------------- <br />
 Argument Key: [Mandatory] (Optional) <br />
 $submit [trigger] [joke] (audio) <br />
