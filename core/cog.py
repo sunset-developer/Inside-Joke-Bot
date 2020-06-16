@@ -35,7 +35,7 @@ class JokeCog(commands.Cog):
             with db_session.begin():
                 try:
                     told_joke = self._get_joke(db_session, trigger_arg, ctx)
-                    await ctx.send(':x: **this joke already exists, use $append or $update to edit this joke**\n'
+                    await ctx.send(':x: **this joke already exists, use the $update to edit this joke**\n'
                                    + str(told_joke))
                 except JokeNotFoundException:
                     new_joke = Joke(ctx.message.author, trigger_arg.lower(), joke_arg, ctx.guild.id, audio)

@@ -36,6 +36,7 @@ async def joke_check(message):
                 await message.channel.send(joke.joke)
                 if joke.audio is not None:
                     await joke_cog.play(joke, message.author.voice.channel)
+                return
 
 
 # Easter egg

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/resources/video/ijbotvideo.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
@@ -2133,6 +2134,7 @@
       <change afterPath="$PROJECT_DIR$/venv/share/man/man1/youtube-dl.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2164,18 +2166,19 @@
   <component name="ProjectId" id="1cp4eIXcv7FTyFfTpP39S1LEXms" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Astronomy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/video" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ijbot/prettyhelp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/resources/info" />
       <recent name="$PROJECT_DIR$/db" />
       <recent name="$PROJECT_DIR$/'" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/video" />
+      <recent name="$PROJECT_DIR$/ijbot/prettyhelp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2250,7 +2253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592258356464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init commit">
+      <created>1592258956401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592258956401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
