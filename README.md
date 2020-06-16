@@ -15,6 +15,8 @@ $get [trigger] <br />
 $stop <br />
 $leave <br />
 
+https://www.youtube.com/watch?v=P8sHjUHStVw&feature=youtu.be
+
 
 ## Usage Examples
 
