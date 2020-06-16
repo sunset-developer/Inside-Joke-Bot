@@ -3,9 +3,9 @@ Hey! The inside joke bot was designed for content creators, groups of friends, a
 
 This bot is open source so us together can bring the best experience we can to your servers. There's nothing fun about a broken bot!
 
-## About 
+## Usage
 
-## Usage 
+## Help
 Notice: You must be the author of or have manage messages to edit or delete an existing joke. <br />
 ---------------Commands--------------- <br />
 Argument Key: [Mandatory] (Optional) <br />
