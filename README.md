@@ -3,7 +3,6 @@ Hey! The inside joke bot was designed for content creators, groups of friends, a
 
 This bot is open source so us together can bring the best experience we can to your servers. There's nothing fun about a broken bot!
 
-## Usage
 
 ## Help
 Notice: You must be the author of or have manage messages to edit or delete an existing joke. <br />
@@ -15,3 +14,17 @@ $delete [trigger] <br />
 $get [trigger] <br />
 $stop <br />
 $leave <br />
+
+
+## Usage
+
+![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga1.PNG)
+
+![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga3.PNG)
+
+![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga2.PNG)
+
+![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga4.PNG)
+
+![alt text](https://github.com/sunset-developer/Inside-Joke-Bot/blob/master/images/ooga5.PNG)
+
