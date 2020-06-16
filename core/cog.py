@@ -94,10 +94,12 @@ class JokeCog(commands.Cog):
             print(exc)
             await ctx.send(':x: Fatal Error:\n ' + exc)
 
-    async def play(self, joke, channel):
+    async def play_joke_audio(self, joke, voice):
+        if voice is None or joke.audio is None:
+            return
         filename, player = await YTDLSource.from_url(joke.audio)
         if self.voice_chat is None:
-            self.voice_chat = await channel.connect()
+            self.voice_chat = await voice.channel.connect()
         self.voice_chat.play(player, after=lambda e: os.remove(filename))
 
 

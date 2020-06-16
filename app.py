@@ -34,8 +34,7 @@ async def joke_check(message):
         for joke in sorted(jokes, key=lambda j: len(j.trigger.split(' ')), reverse=True):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
                 await message.channel.send(joke.joke)
-                if joke.audio is not None:
-                    await joke_cog.play(joke, message.author.voice.channel)
+                await joke_cog.play_joke_audio(joke, message.author.voice)
                 return
 
 
