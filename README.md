@@ -16,6 +16,8 @@ $get [trigger] <br />
 $stop <br />
 $leave <br />
 
+Phrases can also be submitted, however any arguments with spaces must be surrounded in quotes.
+
 
 ## Usage
 
