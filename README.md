@@ -5,6 +5,7 @@ This bot is open source so us together can bring the best experience we can to y
 
 
 ## Help
+https://www.youtube.com/watch?v=P8sHjUHStVw&feature=youtu.be
 Notice: You must be the author of or have manage messages to edit or delete an existing joke. <br />
 ---------------Commands--------------- <br />
 Argument Key: [Mandatory] (Optional) <br />
@@ -14,8 +15,6 @@ $delete [trigger] <br />
 $get [trigger] <br />
 $stop <br />
 $leave <br />
-
-https://www.youtube.com/watch?v=P8sHjUHStVw&feature=youtu.be
 
 
 ## Usage Examples
