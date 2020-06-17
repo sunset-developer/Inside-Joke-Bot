@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/images/ooga1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ooga2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ooga3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ooga4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ooga5.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ijbot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/info/changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/changes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/info/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/requirements.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,16 +44,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/video" />
+      <recent name="$PROJECT_DIR$/ijbot/prettyhelp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/main" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/resources/info" />
       <recent name="$PROJECT_DIR$/db" />
-      <recent name="$PROJECT_DIR$/'" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/video" />
-      <recent name="$PROJECT_DIR$/ijbot/prettyhelp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,6 +67,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ijbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -155,12 +176,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>62</line>
+          <line>65</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

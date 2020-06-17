@@ -6,9 +6,5 @@ from core.config import DB_LOGIN
 engine = create_engine(DB_LOGIN)
 Base = declarative_base()
 Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine, autocommit=True)
 
-
-def create_session():
-    Session = sessionmaker(bind=engine, autocommit=True)
-    session = Session()
-    return session

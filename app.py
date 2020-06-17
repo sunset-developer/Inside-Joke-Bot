@@ -3,7 +3,7 @@ import string
 
 from discord.ext import commands
 from db.dbmodel import Joke
-from db.mysql import create_session
+from db.mysql import Session
 from core.cog import JokeCog, UtilCog
 from core.config import TOKEN, COMMAND_PREFIX
 
@@ -28,13 +28,14 @@ async def on_message(message):
 
 
 async def joke_check(message):
-    db_session = create_session()
+    db_session = Session()
     with db_session.begin():
         jokes = db_session.query(Joke).filter(Joke.active, Joke.parent_uid == message.guild.id).all()
         for joke in sorted(jokes, key=lambda j: len(j.trigger.split(' ')), reverse=True):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
                 await message.channel.send(joke.joke)
-                await joke_cog.play_joke_audio(joke, message.author.voice)
+                if message.author.voice is not None and joke.audio is not None:
+                    await joke_cog.play_joke_audio(joke, message.author.voice)
                 return
 
 
