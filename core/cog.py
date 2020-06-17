@@ -4,8 +4,6 @@ import traceback
 from datetime import datetime
 from discord.ext import commands
 from sqlalchemy import or_
-from youtube_dl import DownloadError
-
 from db.dbmodel import Joke
 from db.mysql import create_session
 from core.model import JokeNotFoundException, YTDLSource
@@ -35,6 +33,7 @@ class JokeCog(commands.Cog):
             with db_session.begin():
                 try:
                     told_joke = self._get_joke(db_session, trigger_arg, ctx)
+                    await ctx.send(':x: **this joke already exists, use the $update to edit this joke**\n')
                     await ctx.send(':x: **this joke already exists, use $update to edit this joke**\n'
                                    + str(told_joke))
                 except JokeNotFoundException:
@@ -94,10 +93,12 @@ class JokeCog(commands.Cog):
             print(exc)
             await ctx.send(':x: Fatal Error:\n ' + exc)
 
-    async def play(self, joke, channel):
+    async def play_joke_audio(self, joke, voice):
+        if voice is None or joke.audio is None:
+            return
         filename, player = await YTDLSource.from_url(joke.audio)
         if self.voice_chat is None:
-            self.voice_chat = await channel.connect()
+            self.voice_chat = await voice.channel.connect()
         self.voice_chat.play(player, after=lambda e: os.remove(filename))
 
 
