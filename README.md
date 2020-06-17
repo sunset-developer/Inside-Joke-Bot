@@ -1,8 +1,5 @@
 # Inside-Joke-Bot
-The inside joke bot was designed for content creators, groups of friends, and communities with each and their own specific sense of humor. 
-The bot allows you to submit certian phrases and responses that would make sense accordingly and have a very funny result.
-It is unique in the fact that the bot's humor can be personalised by your submitions.
-Keep in mind that this bot was intentionally made for smaller servers for the more people, the more submitions that may not be as funny for some and the more people that may trigger jokes which may lead to spam.
+The inside joke bot was designed for content creators, groups of  friends, and communities with each and their own specific sense of  humor. The bot allows you to submit certain phrases and responses that would  make sense accordingly and have a very funny result. It is unique in the fact that the bots humor can be personalized by  your submissions. Keep in mind that this bot was intentionally made for smaller servers  for the more people, the more submissions that may not be as funny for  some and the more people that may trigger jokes which may lead to spam. 
 
 
 This bot is open source so us together can bring the best experience we can to your servers. There's nothing fun about a broken bot!
