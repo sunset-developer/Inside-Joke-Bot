@@ -1,6 +1,5 @@
-***V0.5 Update***
+***V0.5.1 Update***
 ```
-+ Audio capabilities
-- Temporarily removed targeting
-/ Audio is a work in progress
+/ Fixed audio
++ Bot will disconnect if alone for long enough
 ```

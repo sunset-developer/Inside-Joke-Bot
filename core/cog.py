@@ -2,6 +2,8 @@ import os
 import string
 import traceback
 from datetime import datetime
+
+from discord import ClientException
 from discord.ext import commands
 from sqlalchemy import or_
 from youtube_dl import DownloadError
@@ -14,14 +16,12 @@ from core.model import JokeNotFoundException, YTDLSource
 class JokeCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self._last_member = None
-        self.voice_chat = None
 
     def _joke_clause(self, ctx, arg):
         parsed_arg = arg.translate(str.maketrans('', '', string.punctuation))
         get_any = or_(Joke.trigger == parsed_arg, Joke.uid == parsed_arg), Joke.active, Joke.parent_uid == ctx.guild.id
         get_permitted = get_any if ctx.message.author.guild_permissions.manage_messages else (
-        get_any, Joke.author_id == ctx.author.id)
+            get_any, Joke.author_id == ctx.author.id)
         return get_permitted, get_any
 
     def _get_joke(self, db_session, arg, ctx, requires_perm=False):
@@ -30,6 +30,7 @@ class JokeCog(commands.Cog):
         if joke is None:
             raise JokeNotFoundException
         return joke
+
 
     @commands.command()
     async def submit(self, ctx, trigger_arg, joke_arg, audio=None):
@@ -97,21 +98,14 @@ class JokeCog(commands.Cog):
             print(exc)
             await ctx.send(':x: Fatal Error:\n ' + exc)
 
-    async def play_joke_audio(self, joke, voice):
-        filename, player = await YTDLSource.from_url(joke.audio)
-        if self.voice_chat is None:
-            self.voice_chat = await voice.channel.connect()
-        self.voice_chat.play(player, after=lambda e: os.remove(filename))
 
     @commands.command()
     async def stop(self, ctx):
-        self.voice_chat.stop()
+        [client if client.channel is ctx.author.voice.channel else None for client in self.bot.voice_clients][0].stop()
 
     @commands.command()
     async def leave(self, ctx):
-        self.voice_chat.stop()
-        await self.voice_chat.disconnect()
-        self.voice_chat = None
+        await [client if client.channel is ctx.author.voice.channel else None for client in self.bot.voice_clients][0].disconnect()
 
 
 class UtilCog(commands.Cog):

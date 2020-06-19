@@ -1,14 +1,19 @@
+import asyncio
+import os
 import random
 import string
+import time
 
+from discord import ClientException
 from discord.ext import commands
+
+from core.model import YTDLSource
 from db.dbmodel import Joke
 from db.mysql import Session
 from core.cog import JokeCog, UtilCog
 from core.config import TOKEN, COMMAND_PREFIX
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX, help_command=None)
-joke_cog = JokeCog(bot)
 
 
 @bot.event
@@ -35,8 +40,27 @@ async def joke_check(message):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
                 await message.channel.send(joke.joke)
                 if message.author.voice is not None and joke.audio is not None:
-                    await joke_cog.play_joke_audio(joke, message.author.voice)
+                    await play_joke_audio(joke, message.author.voice)
                 return
+
+
+async def play_joke_audio(joke, voice):
+    try:
+        await voice.channel.connect()
+    except ClientException:
+        pass
+    client = [client if client.channel is voice.channel else None for client in bot.voice_clients][0]
+    filename, player = await YTDLSource.from_url(joke.audio)
+    client.play(player, after=lambda e: os.remove(filename))
+
+
+async def disconnect_from_voice_when_idle():
+    await bot.wait_until_ready()
+    while True:
+        for client in bot.voice_clients:
+            if len(client.channel.members) == 1:
+                await client.disconnect()
+        await asyncio.sleep(3600)
 
 
 # Easter egg
@@ -54,6 +78,7 @@ async def card_check(message):
         await message.channel.send('https://allbad.cards/')
 
 
+bot.loop.create_task(disconnect_from_voice_when_idle())
 bot.add_cog(UtilCog(bot))
-bot.add_cog(joke_cog)
+bot.add_cog(JokeCog(bot))
 bot.run(TOKEN, bot=True)

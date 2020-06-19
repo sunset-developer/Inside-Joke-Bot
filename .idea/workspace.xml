@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="init commit">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/info/changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/changes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/info/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/changes.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592351259742</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cleanup and db improvements">
+      <created>1592432683061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592432683061</updated>
+    </task>
+    <task id="LOCAL-00008" summary="requirements.txt">
+      <created>1592432713004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592432713004</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,19 +181,21 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="jwofij" />
     <MESSAGE value="audio fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="audio fix" />
+    <MESSAGE value="cleanup and db improvements" />
+    <MESSAGE value="requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>65</line>
+          <line>66</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
