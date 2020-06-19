@@ -40,7 +40,7 @@ async def joke_check(message):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
                 await message.channel.send(joke.joke)
                 if message.author.voice is not None and joke.audio is not None:
-                    await play_joke_audio(joke, message.author.voice)
+                    await play_joke_audio(joke, message.author.voice.channel)
                 return
 
 
