@@ -110,7 +110,7 @@ class JokeCog(commands.Cog):
     async def leave(self, ctx):
         for client in self.bot.voice_clients:
             if client.channel is ctx.author.voice.channel:
-            await client.disconnect()
+                await client.disconnect()
 
 
 class UtilCog(commands.Cog):
