@@ -1,4 +1,4 @@
-****Inside Joke V0.5****
+****Inside Joke V0.5.1****
 **Notice:** `You must be the author of or have manage messages to edit or delete an existing joke.`
 ~~---------------~~:tools: Commands :tools:~~---------------~~
 **Argument Key:** `[Mandatory] (Optional)`
