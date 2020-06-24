@@ -40,18 +40,19 @@ async def joke_check(message):
             if joke.trigger in message.content.lower().translate(str.maketrans('', '', string.punctuation)):
                 await message.channel.send(joke.joke)
                 if message.author.voice is not None and joke.audio is not None:
-                    await play_joke_audio(joke, message.author.voice)
+                    await play_joke_audio(joke, message.author.voice.channel)
                 return
 
 
-async def play_joke_audio(joke, voice):
+async def play_joke_audio(joke, channel):
     try:
-        await voice.channel.connect()
+        await channel.connect()
     except ClientException:
         pass
-    client = [client if client.channel is voice.channel else None for client in bot.voice_clients][0]
-    filename, player = await YTDLSource.from_url(joke.audio)
-    client.play(player, after=lambda e: os.remove(filename))
+    for client in bot.voice_clients:
+        if client.channel is channel:
+            filename, player = await YTDLSource.from_url(joke.audio)
+            client.play(player, after=lambda e: os.remove(filename))
 
 
 async def disconnect_from_voice_when_idle():
