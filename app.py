@@ -27,7 +27,6 @@ async def on_message(message):
         if not message.content[0] == COMMAND_PREFIX:
             await joke_check(message)
             await card_check(message)
-            await horny_check(message)
         else:
             await bot.process_commands(message)
 
@@ -62,15 +61,6 @@ async def disconnect_from_voice_when_idle():
             if len(client.channel.members) == 1:
                 await client.disconnect()
         await asyncio.sleep(3600)
-
-
-# Easter egg
-async def horny_check(message):
-    if 'horny' in message.content.lower():
-        stds = ['Chancroid', 'Chlamydia', 'Crabs', 'Gonorrhea', 'Hepatitis',
-                'Herpes', 'AIDS', 'Warts', 'HPV', 'Syphillis', 'Vaginal Yeast', 'Nothing']
-        await message.channel.send('{0.author.name} smashed tf out of {1.name} and contracted *{2}*'
-                                   .format(message, random.choice(message.guild.members), random.choice(stds)))
 
 
 # Easter egg
