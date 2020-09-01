@@ -1,5 +1,10 @@
-***V0.5.1 Update***
+***V0.6 Update***
 ```
-/ Fixed audio
-+ Bot will disconnect if alone for long enough
++ Support Server
++ Completely async
++ optimizations
++ Improved joke ownership handling
++ Nsfw submit command
++ Improved permission handling
+- Removed update command
 ```
