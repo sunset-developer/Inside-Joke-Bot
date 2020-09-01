@@ -1,2 +1,5 @@
 core/config.py
 /venv
+/db/config.ini
+/config.ini
+/jokes.csv

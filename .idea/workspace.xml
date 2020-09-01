@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="Lots of changes">
+      <change afterPath="$PROJECT_DIR$/core/cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ijbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ijbot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/dbmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ooga1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/ooga1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ooga2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/ooga2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ooga3.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/ooga3.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ooga4.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/ooga4.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ooga5.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/ooga5.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ijbot" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,18 +61,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1cp4eIXcv7FTyFfTpP39S1LEXms" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -51,20 +85,8 @@
       <recent name="$PROJECT_DIR$/db" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ijbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,6 +113,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,13 +196,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
@@ -187,22 +209,78 @@
     <MESSAGE value="cleanup and db improvements" />
     <MESSAGE value="requirements.txt" />
     <MESSAGE value="audio fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="audio fix" />
+    <MESSAGE value="Lots of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of changes" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/core/cog.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598914313138">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.985@0.27.1920.985" timestamp="1598914313138" />
+    <state x="214" y="268" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598927269048">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="214" y="268" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.985@0.27.1920.985" timestamp="1598927269048" />
+    <state width="1897" height="255" key="GridCell.Tab.0.bottom" timestamp="1599002112431">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="255" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1598974986402" />
+    <state width="948" height="255" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1598976642836" />
+    <state width="1897" height="255" key="GridCell.Tab.0.bottom/0.27.3840.985@0.27.3840.985" timestamp="1599002112431" />
+    <state width="1897" height="255" key="GridCell.Tab.0.center" timestamp="1599002112430">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="255" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1598974986401" />
+    <state width="948" height="255" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1598976642835" />
+    <state width="1897" height="255" key="GridCell.Tab.0.center/0.27.3840.985@0.27.3840.985" timestamp="1599002112430" />
+    <state width="1897" height="255" key="GridCell.Tab.0.left" timestamp="1599002112429">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="255" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1598974986400" />
+    <state width="948" height="255" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1598976642835" />
+    <state width="1897" height="255" key="GridCell.Tab.0.left/0.27.3840.985@0.27.3840.985" timestamp="1599002112429" />
+    <state width="1897" height="255" key="GridCell.Tab.0.right" timestamp="1599002112430">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="255" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1598974986401" />
+    <state width="948" height="255" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1598976642836" />
+    <state width="1897" height="255" key="GridCell.Tab.0.right/0.27.3840.985@0.27.3840.985" timestamp="1599002112430" />
+    <state width="948" height="313" key="GridCell.Tab.1.bottom" timestamp="1598981050967">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="313" key="GridCell.Tab.1.bottom/0.27.3840.985@0.27.3840.985" timestamp="1598981050967" />
+    <state width="948" height="313" key="GridCell.Tab.1.center" timestamp="1598981050966">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="313" key="GridCell.Tab.1.center/0.27.3840.985@0.27.3840.985" timestamp="1598981050966" />
+    <state width="948" height="313" key="GridCell.Tab.1.left" timestamp="1598981050966">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="313" key="GridCell.Tab.1.left/0.27.3840.985@0.27.3840.985" timestamp="1598981050966" />
+    <state width="948" height="313" key="GridCell.Tab.1.right" timestamp="1598981050966">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state width="948" height="313" key="GridCell.Tab.1.right/0.27.3840.985@0.27.3840.985" timestamp="1598981050966" />
+    <state x="700" y="203" width="509" height="640" key="RollbackChangesDialog" timestamp="1599001009073">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state x="700" y="203" width="509" height="640" key="RollbackChangesDialog/0.27.3840.985@0.27.3840.985" timestamp="1599001009073" />
+    <state x="449" y="154" width="1022" height="737" key="SettingsEditor" timestamp="1598915224425">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="449" y="154" width="1022" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1598915224425" />
+    <state x="2323" y="0" width="1550" height="658" maximized="true" key="dock-window-1" timestamp="1598976649713">
+      <screen x="0" y="27" width="3840" height="985" />
+    </state>
+    <state x="1111" y="27" width="600" height="660" key="dock-window-1/0.27.1920.985@0.27.1920.985" timestamp="1598735345654" />
+    <state x="2323" y="0" width="1550" height="658" maximized="true" key="dock-window-1/0.27.3840.985@0.27.3840.985" timestamp="1598976649713" />
+    <state x="1657" y="115" width="600" height="660" key="dock-window-2" timestamp="1598735345655">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="1657" y="115" width="600" height="660" key="dock-window-2/0.27.1920.985@0.27.1920.985" timestamp="1598735345655" />
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1598400027189">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="623" y="242" width="672" height="678" key="search.everywhere.popup/0.27.1920.985@0.27.1920.985" timestamp="1598400027189" />
   </component>
 </project>

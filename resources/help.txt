@@ -1,9 +1,10 @@
-****Inside Joke V0.5.1****
-**Notice:** `You must be the author of or have manage messages to edit or delete an existing joke.`
+****Inside Joke V0.6.0****
+****Support Server: <https://discord.gg/23v29Jz>****
 ~~---------------~~:tools: Commands :tools:~~---------------~~
 **Argument Key:** `[Mandatory] (Optional)`
+**$ = Command Prefix**
 >>> **$submit** `[trigger] [joke] (audio)`
-**$update** `[trigger] [joke] (audio)`
+**$submitnsfw** `[trigger] [joke] (audio)`
 **$delete** `[trigger]`
 **$get** `[trigger]`
 **$stop**
