@@ -1,10 +1,12 @@
 ***V0.6 Update***
 ```
++ Admin commands
++ Multiple users can contribute to the same trigger.
 + Support Server
-+ Completely async
-+ optimizations
++ Major Optimizations
 + Improved joke ownership handling
 + Nsfw submit command
-+ Improved permission handling
-- Removed update command
++ Improved permission handling.
++ Submit quotes to remember stupid things friend's have said!.
+- Removed update command in replace of deleting and resubmitting.
 ```

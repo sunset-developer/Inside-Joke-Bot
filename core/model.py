@@ -1,3 +1,4 @@
+
 import asyncio
 import string
 import uuid
@@ -5,44 +6,31 @@ from datetime import datetime
 
 import discord
 import youtube_dl
+from tortoise.models import Model
+from tortoise import fields, Tortoise
 
 
-class BaseModel:
-    def __init__(self, parent_uid=None, date_created=datetime.utcnow(), uid=str(uuid.uuid4()), deleted=False):
-        self.date_created = date_created
-        self.uid = uid
-        self.parent_uid = parent_uid
-        self.deleted = deleted
+class BaseModel(Model):
+    id = fields.IntField(pk=True)
+    uid = fields.CharField(max_length=36, default=str(uuid.uuid4()))
+    date_created = fields.DatetimeField(auto_now_add=True)
+    parent_uid = fields.CharField(null=True, max_length=36)
+    deleted = fields.BooleanField(default=False)
 
-    def to_dict(self):
-        return {
-            'uid': self.uid,
-            'parent_uid': self.parent_uid,
-            'date_created': self.date_created,
-            'deleted': self.deleted
-        }
+    class Meta:
+        abstract = True
 
 
 class Joke(BaseModel):
+    author = fields.CharField(max_length=45)
+    author_did = fields.CharField(max_length=18)
+    trigger = fields.CharField(max_length=66)
+    joke = fields.CharField(max_length=66)
+    audio = fields.CharField(null=True, max_length=66)
+    nsfw = fields.BooleanField(default=False)
 
-    def __init__(self, parent_uid, author, author_did, trigger, joke, audio, nsfw):
-        super(Joke, self).__init__(parent_uid)
-        self.trigger = trigger.translate(str.maketrans('', '', string.punctuation))
-        self.joke = joke
-        self.author = author
-        self.author_did = author_did
-        self.audio = audio
-        self.nsfw = nsfw
-
-    def to_dict(self):
-        return dict(super().to_dict(), **{
-            'author_did': self.author_did,
-            'author': self.author,
-            'trigger': self.trigger,
-            'joke': self.joke,
-            'audio': self.audio,
-            'nsfw': self.nsfw
-        })
+    class Meta:
+        table = 'joke'
 
     def to_embed(self):
         joke_embed = discord.Embed(title=self.author + '\'s Joke', color=discord.Color.dark_purple())
@@ -59,9 +47,6 @@ class Joke(BaseModel):
                ":alarm_clock: **Time (UTC)**: {3}\n" \
                ":speaker: **Audio**: {4}" \
             .format(self.trigger, self.joke, self.author, self.date_created, self.audio)
-
-
-
 
 
 class JokeNotFoundError(Exception):

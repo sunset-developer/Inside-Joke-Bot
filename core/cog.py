@@ -1,11 +1,8 @@
-import traceback
-
-import aiofiles
-import discord
+import aiofiles as aiofiles
 from discord.ext import commands
 
-from core import cache
-from core.model import Joke, JokeNotFoundError
+from core.model import Joke
+from core.util import to_lower_without_punc
 
 
 class JokeCog(commands.Cog):
@@ -13,9 +10,9 @@ class JokeCog(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def submit(self, ctx, trigger_arg, joke_arg, audio_arg='None', nsfw=False):
-        joke = Joke(ctx.guild.id, ctx.author.name, ctx.author.id, trigger_arg, joke_arg, audio_arg, nsfw)
-        await cache.cache_joke(joke)
+    async def submit(self, ctx, trigger_arg, joke_arg, audio_arg=None, nsfw=False):
+        await Joke.create(parent_uid=ctx.guild.id, author=ctx.author.name, author_did=ctx.author.id,
+                          trigger=to_lower_without_punc(trigger_arg), joke=joke_arg, audio=audio_arg, nsfw=nsfw)
         await ctx.send(':white_check_mark: **Submitted :)**')
 
     @commands.command()
@@ -24,20 +21,22 @@ class JokeCog(commands.Cog):
 
     @commands.command()
     async def delete(self, ctx, trigger_arg):
-        try:
-            deleted_joke = await cache.delete_joke(trigger_arg, ctx.guild.id, ctx.author.id)
-            await ctx.send(':white_check_mark: **Deleted :)**', embed=deleted_joke.to_embed())
-        except JokeNotFoundError:
-            await ctx.send(':x: **Your joke(s) could not be found and therefore not deleted :(**')
+        jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg),
+                                  author_did=ctx.author.id, deleted=False).update(deleted=True)
+        if not jokes:
+            await ctx.send(':x: **I cant delete a joke you didn\'t tell :(**')
+            return
+        await ctx.send(':white_check_mark: **Deleted :)**')
 
     @commands.command()
     async def get(self, ctx, trigger_arg):
-        try:
-            jokes = await cache.filter_jokes_via_trigger(trigger_arg, ctx.guild.id)
-            for joke in jokes:
-                await ctx.send(embed=joke.to_embed())
-        except JokeNotFoundError:
-            await ctx.send(':x: **Could not find the joke you were looking for :(**')
+        jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg), parent_uid=ctx.guild.id,
+                                  deleted=False).all()
+        if not jokes:
+            await ctx.send(':x: **I cant find a joke that wasn\'t told :(**')
+            return
+        for joke in jokes:
+            await ctx.send(embed=joke.to_embed())
 
     @commands.command()
     async def stop(self, ctx):
@@ -50,6 +49,15 @@ class JokeCog(commands.Cog):
         for client in self.bot.voice_clients:
             if client.channel is ctx.author.voice.channel:
                 await client.disconnect()
+
+    @commands.command()
+    async def adelete(self, ctx, trigger_arg, user_arg):
+        jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg), parent_uid=ctx.guild.id,
+                                  author_did=to_lower_without_punc(user_arg), deleted=False).update(deleted=True)
+        if not jokes:
+            await ctx.send(':x: **I cant delete a joke that hasn\'t been told :(**')
+            return
+        await ctx.send(':white_check_mark: **Deleted :)**')
 
 
 class UtilCog(commands.Cog):

@@ -1,5 +1,6 @@
 core/config.py
 /venv
-/db/config.ini
 /config.ini
-/jokes.csv
+/ComediBot.sqlite3
+/ComediBot.sqlite3-shm
+/ComediBot.sqlite3-wal

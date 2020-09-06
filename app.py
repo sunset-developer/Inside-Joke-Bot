@@ -1,15 +1,14 @@
 import asyncio
 import os
-import string
-from configparser import ConfigParser, NoOptionError
+import pyfiglet
 
-import pyfiglet as pyfiglet
+from configparser import ConfigParser, NoOptionError
 from discord import ClientException, LoginFailure
 from discord.ext import commands
-
-from core.cache import get_jokes, filter_jokes_via_trigger
+from tortoise import Tortoise
 from core.cog import JokeCog, UtilCog
-from core.model import YTDLSource
+from core.model import YTDLSource, Joke
+from core.util import to_lower_without_punc
 
 config = ConfigParser()
 bot = commands.Bot(help_command=None, command_prefix=None)
@@ -18,7 +17,12 @@ bot = commands.Bot(help_command=None, command_prefix=None)
 @bot.event
 async def on_ready():
     print(pyfiglet.figlet_format('sunsetdev', 'graffiti'))
-    print("I'm aliiiiive!")
+    print("Hi! I'm alive and ready to tell jokes :)")
+
+
+@bot.event
+async def on_disconnect():
+    await Tortoise.close_connections()
 
 
 @bot.event
@@ -42,14 +46,15 @@ async def on_guild_join(guild):
 
 
 async def joke_check(message):
-    jokes = await filter_jokes_via_trigger(message.content, message.guild.id)
-    for joke in sorted(jokes, key=lambda j: len(j.trigger.split(' ')), reverse=True):
-        if joke.nsfw and not message.channel.is_nsfw():
-            return
-        await message.channel.send(joke.joke)
-        if message.author.voice is not None and joke.audio is not None:
-            await play_joke_audio(joke, message.author.voice.channel)
-        return
+    content = to_lower_without_punc(message.content)
+    jokes = await Joke.filter(parent_uid=message.guild.id, deleted=False).all()
+    for joke in jokes:
+        if joke.trigger in content:
+            if joke.nsfw and not message.channel.is_nsfw():
+                return
+            await message.channel.send(joke.joke)
+            if message.author.voice is not None and joke.audio is not None:
+                await play_joke_audio(joke, message.author.voice.channel)
 
 
 async def play_joke_audio(joke, channel):
@@ -94,6 +99,12 @@ def init():
         os.remove(config_file)
 
 
+async def db_init():
+    await Tortoise.init(db_url="sqlite://ComediBot.sqlite3", modules={"models": ['core.model']})
+    await Tortoise.generate_schemas()
+
+
+bot.loop.create_task(db_init())
 bot.loop.create_task(disconnect_from_voice_when_alone())
 bot.add_cog(UtilCog(bot))
 bot.add_cog(JokeCog(bot))
