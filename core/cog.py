@@ -51,13 +51,22 @@ class JokeCog(commands.Cog):
                 await client.disconnect()
 
     @commands.command()
-    async def adelete(self, ctx, trigger_arg, user_arg):
+    async def deleteuser(self, ctx, trigger_arg, user_arg):
         jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg), parent_uid=ctx.guild.id,
                                   author_did=to_lower_without_punc(user_arg), deleted=False).update(deleted=True)
         if not jokes:
             await ctx.send(':x: **I cant delete a joke that hasn\'t been told :(**')
             return
         await ctx.send(':white_check_mark: **Deleted :)**')
+
+    @commands.command()
+    async def getall(self, ctx):
+        jokes = await Joke.filter(parent_uid=ctx.guild.id, deleted=False).all()
+        if not jokes:
+            await ctx.send(':x: **No jokes have been told on this server :(**')
+            return
+        for joke in jokes:
+            await ctx.send(embed=joke.to_embed())
 
 
 class UtilCog(commands.Cog):

@@ -10,5 +10,3 @@
 **$stop**
 **$leave**
 **$changes**
-~~-------------~~:tools: Admin Commands :tools:~~------------~~
-**$adelete**  (audio)`[trigger] [mention]`
