@@ -7,6 +7,9 @@
 **$submitnsfw** `[trigger] [joke] (audio)`
 **$delete** `[trigger]`
 **$get** `[trigger]`
+**$submitgoof** `[mention] [quote]`
+**$deletegoof** `[mention] [quote]`
+**$getgoof** `[mention] [quote]`
 **$stop**
 **$leave**
 **$changes**

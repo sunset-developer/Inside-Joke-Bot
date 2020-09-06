@@ -6,7 +6,7 @@ from configparser import ConfigParser, NoOptionError
 from discord import ClientException, LoginFailure
 from discord.ext import commands
 from tortoise import Tortoise
-from core.cog import JokeCog, UtilCog
+from core.cog import JokeCog, UtilCog, GoofCog
 from core.model import YTDLSource, Joke
 from core.util import to_lower_without_punc
 
@@ -38,7 +38,7 @@ async def on_message(message):
 async def on_guild_join(guild):
     for channel in guild.channels:
         try:
-            welcome_msg = 'Thanks for inviting me! To start, learn my commands by using ' + bot.command_prefix + 'help'
+            welcome_msg = 'Thanks for inviting me! Learn my commands by using ' + bot.command_prefix + 'help'
             await channel.send(welcome_msg)
             return
         except:
@@ -108,4 +108,5 @@ bot.loop.create_task(db_init())
 bot.loop.create_task(disconnect_from_voice_when_alone())
 bot.add_cog(UtilCog(bot))
 bot.add_cog(JokeCog(bot))
+bot.add_cog(GoofCog(bot))
 init()

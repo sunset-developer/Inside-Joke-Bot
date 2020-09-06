@@ -1,32 +1,39 @@
-
 import asyncio
-import string
 import uuid
-from datetime import datetime
 
 import discord
 import youtube_dl
+from tortoise import fields
 from tortoise.models import Model
-from tortoise import fields, Tortoise
 
 
 class BaseModel(Model):
     id = fields.IntField(pk=True)
-    uid = fields.CharField(max_length=36, default=str(uuid.uuid4()))
+    uid = fields.TextField(default=str(uuid.uuid4()))
     date_created = fields.DatetimeField(auto_now_add=True)
-    parent_uid = fields.CharField(null=True, max_length=36)
+    parent_uid = fields.TextField(null=True)
     deleted = fields.BooleanField(default=False)
 
     class Meta:
         abstract = True
 
 
+class Goof(BaseModel):
+    author_did = fields.TextField()
+    mention_did = fields.TextField()
+    mention_name = fields.TextField()
+    quote = fields.TextField()
+
+    class Meta:
+        table = 'goof'
+
+
 class Joke(BaseModel):
-    author = fields.CharField(max_length=45)
-    author_did = fields.CharField(max_length=18)
-    trigger = fields.CharField(max_length=66)
-    joke = fields.CharField(max_length=66)
-    audio = fields.CharField(null=True, max_length=66)
+    author = fields.TextField()
+    author_did = fields.TextField()
+    trigger = fields.TextField()
+    joke = fields.TextField()
+    audio = fields.TextField(null=True)
     nsfw = fields.BooleanField(default=False)
 
     class Meta:
@@ -40,18 +47,7 @@ class Joke(BaseModel):
         joke_embed.add_field(name='Nsfw', value=str(self.nsfw), inline=False)
         return joke_embed
 
-    def __str__(self):
-        return ":triangular_flag_on_post: **Trigger**: `{0}`  \n" \
-               ":fire: **Joke**: {1}\n" \
-               ":pencil: **Author**: {2}\n" \
-               ":alarm_clock: **Time (UTC)**: {3}\n" \
-               ":speaker: **Audio**: {4}" \
-            .format(self.trigger, self.joke, self.author, self.date_created, self.audio)
 
-
-class JokeNotFoundError(Exception):
-    def __init__(self, message):
-        super(JokeNotFoundError, self).__init__(message)
 
 
 youtube_dl.utils.bug_reports_message = lambda: ''
