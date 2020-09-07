@@ -8,7 +8,7 @@ from discord.ext import commands
 from tortoise import Tortoise
 from core.cog import JokeCog, UtilCog, GoofCog
 from core.model import YTDLSource, Joke
-from core.util import to_lower_without_punc
+from core.util import to_lower_without_punc, can_trigger_jokes
 
 config = ConfigParser()
 bot = commands.Bot(help_command=None, command_prefix=None)
@@ -30,7 +30,7 @@ async def on_message(message):
     if message.author != bot.user:
         if message.content[0] == bot.command_prefix:
             await bot.process_commands(message)
-        else:
+        elif can_trigger_jokes(message.author, message.guild):
             await joke_check(message)
 
 

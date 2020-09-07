@@ -10,6 +10,7 @@
 **$submitgoof** `[mention] [quote]`
 **$deletegoof** `[mention] [quote]`
 **$getgoof** `[mention] [quote]`
+**$genroles**
 **$stop**
 **$leave**
 **$changes**
