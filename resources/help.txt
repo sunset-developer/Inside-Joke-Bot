@@ -9,8 +9,7 @@
 **$get** `[trigger]`
 **$submitgoof** `[mention] [quote]`
 **$deletegoof** `[mention] [quote]`
-**$getgoof** `[mention] [quote]`
-**$genroles**
+**$getgoof** `[mention]`
 **$stop**
 **$leave**
 **$changes**

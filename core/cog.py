@@ -1,7 +1,8 @@
 import aiofiles as aiofiles
 import discord
-from discord import Permissions
 from discord.ext import commands
+from discord.ext.commands import has_permissions
+
 from core.model import Joke, Goof
 from core.util import to_lower_without_punc
 
@@ -79,10 +80,11 @@ class UtilCog(commands.Cog):
         self.bot = bot
 
     @commands.command()
+    @has_permissions(administrator=True)
     async def genroles(self, ctx):
         await ctx.guild.create_role(name='comedian', color=discord.Color.dark_red())
         await ctx.guild.create_role(name='audience', color=discord.Color.dark_blue())
-        await ctx.send(':white_check_mark: **Roles have been generated and permissions enabled :)**')
+        await ctx.send(':white_check_mark: **Roles have been generated, please set permissions :)**')
 
     async def read_file(self, file):
         async with aiofiles.open('resources/' + file, mode="r") as f:
