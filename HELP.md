@@ -21,12 +21,21 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+* [Commands](#Commands)
+  * [General](#prerequisites)
+  * [Meme](#installation)
+  * [Goof](#installation)
+  * [Administrative](#installation)
+* [Roles](#roles)
 
 
+## Commands
+Argument Key 
+```sh
+[Required] (Optional)
+```
+
+### General
+```sh
+$stop
+```
