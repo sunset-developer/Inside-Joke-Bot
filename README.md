@@ -130,7 +130,7 @@ pip3 install -r requirements.txt
 
 ## Usage
 
-Once installed, comedibot has a command-line interface allowing you to onfigure comedibot. Comedibot should be up and running if configured correctly.
+Once installed, comedibot has a command-line interface allowing you to configure comedibot. Comedibot should be up and running if configured correctly.
 
 * Example 
 ```sh
@@ -139,11 +139,11 @@ python3 app.py -pfx $ -tkn JJnKuNoiNInnU0.Z23PWK.k420jopBUIbu3-Hi_wjUWm87 -dbu r
 
 * Help
 ```sh
-  -h, --help show this help message and exit
+  -h, --help Show this help message and exit
   -pfx, --prefix Command prefix
-  -tkn, --token Bot token
+  -tkn, --token Your bot token
   -dbu, --dbusername MySQL database username
-  -dbp, --dbpassword  MySQL database password
+  -dbp, --dbpassword MySQL database password
   -dbe, --dbendpoint MySQL database endpoint
 ```
 
