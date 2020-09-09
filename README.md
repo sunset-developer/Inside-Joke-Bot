@@ -133,9 +133,17 @@ pip3 install -r requirements.txt
 
 Once installed, comedibot has a command-line interface allowing you to configure comedibot. Comedibot should be up and running if configured correctly.
 
+
 * Example 
 ```sh
 python3 app.py -pfx $ -tkn JJnKuNoiNInnU0.Z23PWK.k420jopBUIbu3-Hi_wjUWm87 -dbu root -dbp password -dbe 127.0.0.1
+```
+
+This also makes it really easy to make changes to the configuration for example if you decide to change database credentials.
+
+* Example
+```sh
+python3 app.py  -dbu newuser -dbp newpass
 ```
 
 * Help
