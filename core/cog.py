@@ -1,5 +1,4 @@
 import traceback
-
 import aiofiles
 import discord
 from discord.ext import commands
