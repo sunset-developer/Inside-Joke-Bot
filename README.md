@@ -80,6 +80,7 @@ Personalized, Customized, Comedibot.
 
 <!-- GETTING STARTED -->
 ## Getting Started
+To use comedibot on your discord server, use this invite link: https://discord.com/oauth2/authorize?client_id=749003695131459585&scope=bot&permissions=271604800
 
 Comedibot is currently hosted on my servers, but if you'd like you can host it on your own!
 It is recommended to use a linux server to host Comedibot.
