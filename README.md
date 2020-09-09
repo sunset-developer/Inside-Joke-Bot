@@ -80,7 +80,7 @@ You can also tell Comedibot some stupid things your friend has said, always to r
 
 Comedibot is capable of being used in large servers due to administrator commands, role based permissions, and that individual users can rest assured that their jokes can't be tampered with.
 
-So, would you rather a lame, probably unfunny, and personality free meme bot? Or would you rather have the next best thing to bring your friends or your community together with laughter.
+So, would you rather a lame, probably unfunny, and personality free meme bot? Or do you want the next best thing to bring your friends and your community together with personalized humor and memes.
 
 Personalized, Customized, Comedibot.
 
