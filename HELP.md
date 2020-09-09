@@ -73,6 +73,16 @@ This section demonstrated how to submit triggerable memes.
 * ```$genroles```
   - Generates roles needed for permissions. Roles may need to be configured by adminstrators.
   
+* ```$fdelete [trigger] (mention)```
+  - ```mention``` is an optional paramater for when you want to delete a meme told by a specific user.
+  - Otherwise leaving mention blank will delete all memes with associated trigger.
 
 * ```$fdeletegoof [mention] [quote]```
   - Forcefully deletes the goof of any user.
+  
+## Roles
+
+* ```Comedian``` role allows for users to execute commands.
+* ```Audience``` allows for the triggering of memes.
+
+The absence of a role in a server will default to allow all.
