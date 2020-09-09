@@ -66,7 +66,7 @@ This section demonstrated how to submit triggerable memes.
   - Deletes a goof that you submitted.
   
 * ```$getgoof [mention]```
-  - Retreives all of the goof's associated with this mention.
+  - Retreives all of the goof's associated with this mention with timestamp.
  
 ### Administrative
 
