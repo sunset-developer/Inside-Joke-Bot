@@ -85,14 +85,6 @@ So, would you rather a lame, probably unfunny, and personality free meme bot? Or
 Personalized, Customized, Comedibot.
 
 
-### Built With
-
-* Discord.py
-* Tortoise orm
-* Youtube-dl
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
