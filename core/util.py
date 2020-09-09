@@ -1,5 +1,5 @@
+# Copyright (C) 2020  Aidan Stewart (sunset-developer)
 import string
-
 import discord
 
 

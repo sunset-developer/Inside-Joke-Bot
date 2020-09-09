@@ -1,3 +1,4 @@
+# Copyright (C) 2020  Aidan Stewart (sunset-developer)
 import asyncio
 import uuid
 
