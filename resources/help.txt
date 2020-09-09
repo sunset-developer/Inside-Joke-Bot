@@ -1,4 +1,4 @@
-****Inside Joke V0.6.0****
+****Inside Joke V01.0.0****
 **Support Server:** <https://discord.gg/23v29Jz>
 **Command Documentation:** <https://github.com/sunset-developer/ComediBot/blob/master/HELP.md>
 **Argument Key:** `[Mandatory] (Optional)`
