@@ -26,8 +26,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -175,14 +173,12 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/sunset-developer/repo.svg?style=flat-square
-[contributors-url]: https://github.com/sunset-developer/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sunset-developer/repo.svg?style=flat-square
-[forks-url]: https://github.com/sunset-developer/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/sunset-developer/repo.svg?style=flat-square
-[stars-url]: https://github.com/sunset-developer/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/sunset-developer/repo.svg?style=flat-square
-[issues-url]: https://github.com/sunset-developer/repo/issues
-[license-shield]: https://img.shields.io/github/license/sunset-developer/repo.svg?style=flat-square
-[license-url]: https://github.com/sunset-developer/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/sunset-developer/ComediBot.svg?style=flat-square
+[contributors-url]: https://github.com/sunset-developer/ComediBot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sunset-developer/ComediBot.svg?style=flat-square
+[forks-url]: https://github.com/sunset-developer/ComediBot/network/members
+[stars-shield]: https://img.shields.io/github/stars/sunset-developer/ComediBot.svg?style=flat-square
+[stars-url]: https://github.com/sunset-developer/ComediBot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sunset-developer/ComediBot.svg?style=flat-square
+[issues-url]: https://github.com/sunset-developer/ComediBot/issues
 [product-screenshot]: images/screenshot.png
