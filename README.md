@@ -22,12 +22,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][https://github.com/sunset-developer/ComediBot]
-[![Forks][forks-shield]][https://github.com/sunset-developer/ComediBot]
-[![Stargazers][stars-shield]][https://github.com/sunset-developer/ComediBot]
-[![Issues][issues-shield]][https://github.com/sunset-developer/ComediBot]
-[![MIT License][license-shield]][https://github.com/sunset-developer/ComediBot]
-[![LinkedIn][linkedin-shield]][lhttps://github.com/sunset-developer/ComediBot]
+[![Contributors][contributors-shield][https://github.com/sunset-developer/ComediBot]
+[![Forks][forks-shield][https://github.com/sunset-developer/ComediBot]
+[![Stargazers][stars-shield][https://github.com/sunset-developer/ComediBot]
+[![Issues][issues-shield][https://github.com/sunset-developer/ComediBot]
+[![MIT License][license-shield][https://github.com/sunset-developer/ComediBot]
+[![LinkedIn][linkedin-shield][lhttps://github.com/sunset-developer/ComediBot]
 
 
 
