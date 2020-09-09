@@ -29,7 +29,7 @@ async def on_disconnect():
 
 @bot.event
 async def on_message(message):
-    if message.author != bot.user:
+    if not message.author.bot:
         if message.content[0] == bot.command_prefix and can_execute_commands(message.author, message.guild):
             await bot.process_commands(message)
         elif can_trigger_memes(message.author, message.guild):

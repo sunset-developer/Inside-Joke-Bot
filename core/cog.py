@@ -92,8 +92,8 @@ class AdminCog(commands.Cog):
     @has_permissions(manage_messages=True)
     @commands.command()
     async def fdelete(self, ctx, trigger_arg, mention: discord.User = None):
-        memes_query_set = TriggeredMeme.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg)).query
-        memes = memes_query_set.filter(author_did=mention.id).update(deleted=True) if mention else memes_query_set.update(deleted=True)
+        memes_query_set = TriggeredMeme.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg)).all()
+        memes = await memes_query_set.filter(author_did=mention.id).update(deleted=True) if mention else await memes_query_set.update(deleted=True)
         if not memes:
             await ctx.send(':x: **I cant delete a meme that doesn\'t exist :(**')
         else:
