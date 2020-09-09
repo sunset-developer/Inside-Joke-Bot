@@ -97,15 +97,22 @@ To host Comedibot yourself follow these simple steps.
 ```sh
 sudo apt install python3-pip
 ```
-* mysql
-```sh
-You must create a MySQL database and create a schema called comedibot.
-```
 
 * mmpeg (Required for linux server)
 ```sh
 sudo apt install mmpeg
 ```
+
+* mysql
+```sh
+You must create a MySQL database and create a schema called comedibot.
+```
+
+*python3.8
+```sh
+Any version below will not work for comedibot.
+```
+
 
 ### Installation
 
