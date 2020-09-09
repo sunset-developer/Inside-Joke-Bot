@@ -105,12 +105,15 @@ sudo apt install mmpeg
 
 * mysql
 
-You must create a MySQL database then create a schema called comedibot.
-
+```sh
+You must create a MySQL database and create a schema called comedibot.
+```
 
 * python3.8
 
+```sh
 Any version below will not work.
+```
 
 
 
