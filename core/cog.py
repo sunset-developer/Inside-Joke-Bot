@@ -112,8 +112,8 @@ class AdminCog(commands.Cog):
     @has_permissions(manage_roles=True)
     @commands.command()
     async def genroles(self, ctx):
-        await ctx.guild.create_role(name='comedian', color=discord.Color.dark_red())
-        await ctx.guild.create_role(name='audience', color=discord.Color.dark_blue())
+        await ctx.guild.create_role(name='Comedian', color=discord.Color.dark_red())
+        await ctx.guild.create_role(name='Audience', color=discord.Color.dark_blue())
         await ctx.send(':white_check_mark: **Roles have been generated, please set permissions :)**')
 
 
