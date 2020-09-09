@@ -26,7 +26,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/286e9a6dcb1b472c85c0686bdd05b042)](https://app.codacy.com/manual/aidanstewart/ComediBot?utm_source=github.com&utm_medium=referral&utm_content=sunset-developer/ComediBot&utm_campaign=Badge_Grade_Dashboard)
 
 
 <!-- PROJECT LOGO -->
