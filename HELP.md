@@ -32,15 +32,15 @@
 Argument Key: ```[Required] (Optional)```
 
 Command Preifx: ```$``` (Is subject to change)
+* ```$stop``` - Stops bot from transmitting audio.
+* ```$leave``` - Kicks bot from voice channel.
+* ```$help``` - Displays help menu.
 
-```$stop``` - Stops bot from transmitting audio.
-
-```$leave``` - Kicks bot from voice channel.
-
-```$help``` - Displays help menu.
-
-  ### Meme
+### Meme
   This section demonstrated how to submit triggerable memes.
   
-  * $submit [trigger] [joke] [audio]
+  * ``$submit [trigger] [meme] (audio)```
+    - ```trigger``` is a word or a phrase that comedibot looks for.
+    - ```meme``` is the phrase that comedibot responds with when triggered
+    - ```audio``` is an optional paramter which triggers audio alongside your meme. Audio can be either a youtube link or even just a search phrase.
 
