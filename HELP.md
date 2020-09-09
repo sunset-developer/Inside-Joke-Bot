@@ -39,7 +39,6 @@ Command Preifx: ```$``` (Is subject to change)
 * ```$help``` - Displays help menu.
 
 ### Meme
-This section demonstrated how to submit triggerable memes.
   
 * ```$submit [trigger] [meme] (audio)```
   - ```trigger``` is a word or a phrase that comedibot looks for.
