@@ -67,8 +67,9 @@ Command Preifx: ```$``` (Is subject to change)
   - Generates roles needed for permissions. Roles may need to be configured by adminstrators.
   
 * ```$fdelete [trigger] (mention)```
+  - Forcefully deletes a meme by any user.
   - ```mention``` is an optional paramater for when you want to delete a meme told by a specific user.
-  - Otherwise leaving mention blank will delete all memes with associated trigger.
+  - Leaving mention blank will delete all memes with associated trigger.
 
 * ```$fdeletegoof [mention] [quote]```
   - Forcefully deletes the goof of any user.
