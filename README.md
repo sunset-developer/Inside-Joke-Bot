@@ -88,8 +88,8 @@ Personalized, Customized, Comedibot.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Comedibot is currently hosted on my servers, but hosting it on your own is just as easy!
-To host Comedibot yourself follow these simple steps.
+Comedibot is currently hosted on my servers, but if you'd like you can host it on your own!
+It is recommended to use a linux server to host Comedibot.
 
 ### Prerequisites
 
@@ -102,8 +102,6 @@ sudo apt-get install python3-pip
 ```sh
 sudo apt-get install mmpeg
 ```
-
-The steps above are required for a linux server.
 
 
 * mysql
