@@ -8,11 +8,11 @@ def to_lower_without_punc(str):
 
 
 def can_execute_commands(user, guild):
-    return _perm_check(user, guild, 'comedian')
+    return _perm_check(user, guild, 'Comedian')
 
 
 def can_trigger_memes(user, guild):
-    return _perm_check(user, guild, 'audience')
+    return _perm_check(user, guild, 'Audience')
 
 
 def _perm_check(user, guild, perm):
