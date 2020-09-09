@@ -76,9 +76,9 @@
 
 ### Built With
 
-* [](Discord.py)
-* [](Tortoise orm)
-* [](Youtube-dl)
+* Discord.py
+* Tortoise orm
+* Youtube-dl
 
 
 
