@@ -88,11 +88,11 @@ Personalized, Customized, Comedibot.
 <!-- GETTING STARTED -->
 ## Getting Started
 
+Comedibot is currently hosted on my servers, but hosting it on your own is just as easy!
 To host Comedibot yourself follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * pip3
 ```sh
 sudo apt install python3-pip
@@ -108,22 +108,14 @@ git clone https://github.com/sunset-developer/ComediBot.git
 ```sh
 pip3 install -r requirements.txt
 ```
+3. Install mmpeg (Required for audio on linux)
+```sh
+sudo apt install mmpeg
+```
 
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Comedibot is currently hosted on my servers, but hosting it on your own is just as easy!
-I will demonstrate how to use, and to host my bot.
-
-### Hosting
-- Hosting as 
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+Once installed, 
 
 
 <!-- CONTRIBUTING -->
