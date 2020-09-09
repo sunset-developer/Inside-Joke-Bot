@@ -44,9 +44,9 @@
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
-    <a href="https://github.com/github_username/ComediBot/issues">Report Bug</a>
+    <a href="https://github.com/sunset-developer/ComediBot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/ComediBot/issues">Request Feature</a>
+    <a href="https://github.com/sunset-developer/ComediBot/pulls">Request Feature</a>
   </p>
 </p>
 
