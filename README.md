@@ -70,8 +70,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Comedibot is a customizable meme bot for content creators, communities, and groups of friends. 
 
+Comedibot, unlike most meme bots, has the ability to be totally personalized to your sense of humor.
+
+Comedibot responds to phrases or words detected in chat with a joke, meme, and even audio in ways that can be unexpected and have a very humorous result. What the bot responds too and with is up to you.
+
+You can also tell Comedibot some stupid things your friend has said, always to remember and to bring up later when your friend denies saying something so dumb.
+
+Comedibot is capable of being used in large servers due to administrator commands, role based permissions, and that individual users can rest assured that their jokes can't be tampered with.
+
+So, would you rather a lame, probably unfunny, and personality free meme bot? Or would you rather have the next best thing to bring your friends or your community together with laughter.
+
+Personalized, Customized, Comedibot.
 
 
 ### Built With
