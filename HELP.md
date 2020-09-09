@@ -34,7 +34,9 @@ Argument Key: ```[Required] (Optional)```
 Command Preifx: ```$``` (Is subject to change)
 
 ```$stop``` - Stops bot from transmitting audio.
+
 ```$leave``` - Kicks bot from voice channel.
+
 ```$help``` - Displays help menu.
 
   ### Meme
