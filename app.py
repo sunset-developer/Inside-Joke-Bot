@@ -7,8 +7,8 @@ from discord import ClientException
 from discord.ext import commands
 from tortoise import Tortoise
 from core.cog import JokeCog, UtilCog, GoofCog, AdminCog
-from core.model import YTDLSource, Joke
-from core.util import to_lower_without_punc, can_trigger_jokes, can_execute_commands
+from core.model import YTDLSource, TriggeredMeme
+from core.util import to_lower_without_punc, can_trigger_memes, can_execute_commands
 
 config_file = 'config.ini'
 arg = argparse.ArgumentParser(description='Comedibot Configuration')
@@ -19,7 +19,7 @@ bot = commands.Bot(help_command=None, command_prefix=None)
 @bot.event
 async def on_ready():
     print(pyfiglet.figlet_format('sunsetdev', 'graffiti'))
-    print("Hi! I'm alive and ready to tell jokes :)")
+    print("Hi! I'm alive and ready to tell memes :)")
 
 
 @bot.event
@@ -32,8 +32,8 @@ async def on_message(message):
     if message.author != bot.user:
         if message.content[0] == bot.command_prefix and can_execute_commands(message.author, message.guild):
             await bot.process_commands(message)
-        elif can_trigger_jokes(message.author, message.guild):
-            await joke_check(message)
+        elif can_trigger_memes(message.author, message.guild):
+            await meme_check(message)
 
 
 @bot.event
@@ -47,26 +47,26 @@ async def on_guild_join(guild):
             pass
 
 
-async def joke_check(message):
+async def meme_check(message):
     content = to_lower_without_punc(message.content)
-    jokes = await Joke.filter(guild_did=message.guild.id, deleted=False).all()
-    for joke in jokes:
-        if joke.trigger in content:
-            if joke.nsfw and not message.channel.is_nsfw():
+    memes = await TriggeredMeme.filter(guild_did=message.guild.id, deleted=False).all()
+    for meme in memes:
+        if meme.trigger in content:
+            if meme.nsfw and not message.channel.is_nsfw():
                 return
-            await message.channel.send(joke.joke)
-            if message.author.voice is not None and joke.audio is not None:
-                await play_joke_audio(joke, message.author.voice.channel)
+            await message.channel.send(meme.meme)
+            if message.author.voice is not None and meme.audio is not None:
+                await play_meme_audio(meme, message.author.voice.channel)
 
 
-async def play_joke_audio(joke, channel):
+async def play_meme_audio(meme, channel):
     try:
         await channel.connect()
     except ClientException:
         pass
     for client in bot.voice_clients:
         if client.channel is channel:
-            filename, player = await YTDLSource.from_url(joke.audio)
+            filename, player = await YTDLSource.from_url(meme.audio)
             client.play(player, after=lambda e: os.remove(filename))
 
 

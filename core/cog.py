@@ -6,7 +6,7 @@ from discord.ext import commands
 from discord.ext.commands import has_permissions
 from tortoise.exceptions import OperationalError
 
-from core.model import Joke, Goof
+from core.model import TriggeredMeme, Goof
 from core.util import to_lower_without_punc
 
 
@@ -15,39 +15,39 @@ class JokeCog(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def submit(self, ctx, trigger_arg, joke_arg, audio_arg=None, nsfw=False):
+    async def submit(self, ctx, trigger_arg, meme_arg, audio_arg=None, nsfw=False):
         try:
-            await Joke.create(guild_did=ctx.guild.id, author_did=ctx.author.id, joke=joke_arg, audio=audio_arg,
-                              trigger=to_lower_without_punc(trigger_arg), nsfw=nsfw)
+            await TriggeredMeme.create(guild_did=ctx.guild.id, author_did=ctx.author.id, meme=meme_arg, audio=audio_arg,
+                                       trigger=to_lower_without_punc(trigger_arg), nsfw=nsfw)
             await ctx.send(':white_check_mark: **Submitted :)**')
         except OperationalError:
             traceback.print_exc()
             await ctx.send(':x: **An error occurred, please try again :(**')
 
     @commands.command()
-    async def submitnsfw(self, ctx, trigger_arg, joke_arg, audio_arg='None'):
-        await self.submit(ctx, trigger_arg, joke_arg, audio_arg, True)
+    async def submitnsfw(self, ctx, trigger_arg, meme_arg, audio_arg='None'):
+        await self.submit(ctx, trigger_arg, meme_arg, audio_arg, True)
 
     @commands.command()
     async def delete(self, ctx, trigger_arg):
-        jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg), author_did=ctx.author.id,
-                                  guild_did=ctx.guild.id, deleted=False).update(deleted=True)
-        if not jokes:
-            await ctx.send(':x: **I cant delete a joke you didn\'t tell :(**')
+        memes = await TriggeredMeme.filter(trigger=to_lower_without_punc(trigger_arg), author_did=ctx.author.id,
+                                           guild_did=ctx.guild.id, deleted=False).update(deleted=True)
+        if not memes:
+            await ctx.send(':x: **I cant delete a meme you didn\'t tell :(**')
         else:
             await ctx.send(':white_check_mark: **Deleted :)**')
 
     @commands.command()
     async def get(self, ctx, trigger_arg):
-        jokes = await Joke.filter(trigger=to_lower_without_punc(trigger_arg), guild_did=ctx.guild.id,
-                                  deleted=False).all()
-        if not jokes:
-            await ctx.send(':x: **I cant find a joke that wasn\'t told :(**')
+        memes = await TriggeredMeme.filter(trigger=to_lower_without_punc(trigger_arg), guild_did=ctx.guild.id,
+                                           deleted=False).all()
+        if not memes:
+            await ctx.send(':x: **I cant find a meme that wasn\'t told :(**')
         else:
-            joke_embed = discord.Embed(title='This joke has been told by:', color=discord.Color.dark_purple())
-            for joke in jokes:
-                joke_embed.add_field(name=ctx.guild.get_member(int(joke.author_did)), value=joke.joke)
-            await ctx.send(embed=joke_embed)
+            meme_embed = discord.Embed(title='This meme has been told by:', color=discord.Color.dark_purple())
+            for meme in memes:
+                meme_embed.add_field(name=ctx.guild.get_member(int(meme.author_did)), value=meme.meme)
+            await ctx.send(embed=meme_embed)
 
 
 class GoofCog(commands.Cog):
@@ -92,10 +92,10 @@ class AdminCog(commands.Cog):
     @has_permissions(manage_messages=True)
     @commands.command()
     async def fdelete(self, ctx, trigger_arg):
-        jokes = await Joke.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg)) \
+        memes = await TriggeredMeme.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg)) \
             .update(deleted=True)
-        if not jokes:
-            await ctx.send(':x: **I cant delete a joke that doesn\'t exist :(**')
+        if not memes:
+            await ctx.send(':x: **I cant delete a meme that doesn\'t exist :(**')
         else:
             await ctx.send(':white_check_mark: **Deleted :)**')
 

@@ -27,14 +27,14 @@ class Goof(BaseModel):
         table = 'goof'
 
 
-class Joke(BaseModel):
+class TriggeredMeme(BaseModel):
     trigger = fields.CharField(max_length=66)
-    joke = fields.CharField(max_length=66)
+    meme = fields.CharField(max_length=66)
     audio = fields.CharField(null=True, max_length=66)
     nsfw = fields.BooleanField(default=False)
 
     class Meta:
-        table = 'joke'
+        table = 'meme'
 
 class YTDLSource(discord.PCMVolumeTransformer):
     youtube_dl.utils.bug_reports_message = lambda: ''
