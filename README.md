@@ -98,7 +98,7 @@ To host Comedibot yourself follow these simple steps.
 sudo apt-get install python3-pip
 ```
 
-* mmpeg (Required for linux server)
+* mmpeg
 ```sh
 sudo apt-get install mmpeg
 ```
