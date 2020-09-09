@@ -30,12 +30,9 @@
 
 
 ## Commands
-Argument Key 
-```sh
-[Required] (Optional)
-```
+Argument Key: ```[Required] (Optional)```
+Command Preifx: ```$``` (Is subject to change)
 
-### General
-```sh
-$stop
-```
+* $stop
+```Instantly stops any audio from transmitting```
+
