@@ -130,10 +130,6 @@ class UtilCog(commands.Cog):
         await ctx.channel.send(await self.read_file('help.txt'))
 
     @commands.command()
-    async def changes(self, ctx):
-        await ctx.channel.send(await self.read_file('changes.txt'))
-
-    @commands.command()
     async def stop(self, ctx):
         for client in self.bot.voice_clients:
             if client.channel is ctx.author.voice.channel:
