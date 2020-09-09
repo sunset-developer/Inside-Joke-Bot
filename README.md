@@ -97,6 +97,10 @@ To host Comedibot yourself follow these simple steps.
 ```sh
 sudo apt install python3-pip
 ```
+* mysql
+```sh
+you must create a schema called comedibot
+```
 
 ### Installation
 
