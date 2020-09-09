@@ -88,7 +88,7 @@ Personalized, Customized, Comedibot.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To host Comedibot yourself follow these simple steps.
 
 ### Prerequisites
 
