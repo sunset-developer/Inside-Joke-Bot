@@ -75,4 +75,4 @@ This section demonstrated how to submit triggerable memes.
   
 
 * ```$fdeletegoof [mention] [quote]```
-  - Forcefully deletes the goof of any user in server.
+  - Forcefully deletes the goof of any user.
