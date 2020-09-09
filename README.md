@@ -176,10 +176,7 @@ Discord: sunsetdev#6465
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
+* [Be the first! Submit a pull request.]()
 
 
 
