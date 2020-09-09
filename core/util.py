@@ -11,7 +11,7 @@ def can_execute_commands(user, guild):
     return _perm_check(user, guild, 'comedian')
 
 
-def can_trigger_jokes(user, guild):
+def can_trigger_memes(user, guild):
     return _perm_check(user, guild, 'audience')
 
 
