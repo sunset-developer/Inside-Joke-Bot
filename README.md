@@ -143,6 +143,8 @@ Aidan Stewart - aidanstewart@sunsetdeveloper.com
 
 Project Link: [https://github.com/sunset-developer/ComediBot](https://github.com/sunset-developer/ComediBot)
 
+Support Server: [https://discord.gg/wRTCcws](https://discord.gg/wRTCcws)
+
 Discord: sunsetdev#6465
 
 
