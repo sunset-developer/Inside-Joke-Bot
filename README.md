@@ -114,6 +114,12 @@ pip3 install -r requirements.txt
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+Comedibot is currently hosted on my servers, but hosting it on your own is just as easy!
+I will demonstrate how to use, and to host my bot.
+
+### Hosting
+- Hosting as 
+
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
