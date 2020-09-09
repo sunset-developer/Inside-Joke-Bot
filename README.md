@@ -95,12 +95,12 @@ To host Comedibot yourself follow these simple steps.
 
 * pip3
 ```sh
-sudo apt install python3-pip
+sudo apt-get install python3-pip
 ```
 
 * mmpeg (Required for linux server)
 ```sh
-sudo apt install mmpeg
+sudo apt-get install mmpeg
 ```
 
 * mysql
