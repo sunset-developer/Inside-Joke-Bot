@@ -103,6 +103,9 @@ sudo apt-get install python3-pip
 sudo apt-get install mmpeg
 ```
 
+The steps above are required for a linux server.
+
+
 * mysql
 
 ```sh
