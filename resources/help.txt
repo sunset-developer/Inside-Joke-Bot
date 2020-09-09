@@ -1,15 +1,11 @@
 ****Inside Joke V0.6.0****
-****Support Server: <https://discord.gg/23v29Jz>****
+**Support Server:** <https://discord.gg/23v29Jz>
+**Command Documentation:** <https://github.com/sunset-developer/ComediBot/blob/master/resources/help.md>
 **Argument Key:** `[Mandatory] (Optional)`
-**Command Prefix:** `$`
->>> ~~---------------~~:tools: Commands :tools:~~----------------~~
-**$submit** `[trigger] [joke] (audio)`
-**$submitnsfw** `[trigger] [joke] (audio)`
-**$delete** `[trigger]`
-**$get** `[trigger]`
-**$submitgoof** `[mention] [quote]`
-**$deletegoof** `[mention] [quote]`
-**$getgoof** `[mention]`
-**$stop**
-**$leave**
-**$changes**
+>>> ~~---------------~~:tools: Basic Commands :tools:~~----------------~~
+**submit** `[trigger] [joke] (audio)`
+**submitnsfw** `[trigger] [joke] (audio)`
+**delete** `[trigger]`
+**get** `[trigger]`
+**stop**
+**leave**
