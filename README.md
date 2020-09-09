@@ -99,7 +99,7 @@ sudo apt install python3-pip
 ```
 * mysql
 ```sh
-You must create a schema called comedibot.
+You must create a MySQL database and create a schema called comedibot.
 ```
 
 * mmpeg (Required for linux server)
