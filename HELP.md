@@ -21,10 +21,10 @@
 ## Table of Contents
 
 * [Commands](#Commands)
-  * [General](#general)
   * [Meme](#installation)
   * [Goof](#installation)
   * [Administrative](#installation)
+   * [Misc](#misc)
 * [Roles](#roles)
 
 
@@ -32,11 +32,6 @@
 Argument Key: ```[Required] (Optional)```
 
 Command Preifx: ```$``` (Is subject to change)
-
-### General
-* ```$stop``` - Stops bot from transmitting audio.
-* ```$leave``` - Kicks bot from voice channel.
-* ```$help``` - Displays help menu.
 
 ### Meme
   
@@ -77,6 +72,12 @@ Command Preifx: ```$``` (Is subject to change)
 
 * ```$fdeletegoof [mention] [quote]```
   - Forcefully deletes the goof of any user.
+  
+### Misc
+
+* ```$stop``` - Stops bot from transmitting audio.
+* ```$leave``` - Kicks bot from voice channel.
+* ```$help``` - Displays help menu.
   
 ## Roles
 
