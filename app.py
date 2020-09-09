@@ -6,7 +6,7 @@ from configparser import ConfigParser
 from discord import ClientException
 from discord.ext import commands
 from tortoise import Tortoise
-from core.cog import JokeCog, UtilCog, GoofCog
+from core.cog import JokeCog, UtilCog, GoofCog, AdminCog
 from core.model import YTDLSource, Joke
 from core.util import to_lower_without_punc, can_trigger_jokes, can_execute_commands
 
@@ -49,7 +49,7 @@ async def on_guild_join(guild):
 
 async def joke_check(message):
     content = to_lower_without_punc(message.content)
-    jokes = await Joke.filter(parent_uid=message.guild.id, deleted=False).all()
+    jokes = await Joke.filter(guild_did=message.guild.id, deleted=False).all()
     for joke in jokes:
         if joke.trigger in content:
             if joke.nsfw and not message.channel.is_nsfw():
@@ -92,6 +92,7 @@ def init():
     config.read(config_file)
     bot.loop.create_task(db_init())
     bot.loop.create_task(disconnect_from_voice_when_alone())
+    bot.add_cog(AdminCog(bot))
     bot.add_cog(UtilCog(bot))
     bot.add_cog(JokeCog(bot))
     bot.add_cog(GoofCog(bot))

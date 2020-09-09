@@ -9,9 +9,10 @@ from tortoise.models import Model
 
 class BaseModel(Model):
     id = fields.IntField(pk=True)
-    uid = fields.TextField(default=str(uuid.uuid4()))
+    uid = fields.UUIDField(default=uuid.uuid4())
     date_created = fields.DatetimeField(auto_now_add=True)
-    parent_uid = fields.TextField(null=True)
+    guild_did = fields.CharField(max_length=18, null=True)
+    author_did = fields.CharField(max_length=18, null=True)
     deleted = fields.BooleanField(default=False)
 
     class Meta:
@@ -19,26 +20,21 @@ class BaseModel(Model):
 
 
 class Goof(BaseModel):
-    author_did = fields.TextField()
-    mention_did = fields.TextField()
-    mention_name = fields.TextField()
-    quote = fields.TextField()
+    mention_did = fields.CharField(max_length=18, null=True)
+    quote = fields.CharField(max_length=66)
 
     class Meta:
         table = 'goof'
 
 
 class Joke(BaseModel):
-    author = fields.TextField()
-    author_did = fields.TextField()
-    trigger = fields.TextField()
-    joke = fields.TextField()
-    audio = fields.TextField(null=True)
+    trigger = fields.CharField(max_length=66)
+    joke = fields.CharField(max_length=66)
+    audio = fields.CharField(null=True, max_length=66)
     nsfw = fields.BooleanField(default=False)
 
     class Meta:
         table = 'joke'
-
 
 class YTDLSource(discord.PCMVolumeTransformer):
     youtube_dl.utils.bug_reports_message = lambda: ''
