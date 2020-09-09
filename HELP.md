@@ -21,9 +21,9 @@
 ## Table of Contents
 
 * [Commands](#Commands)
-  * [Meme](#installation)
-  * [Goof](#installation)
-  * [Administrative](#installation)
+  * [Meme](#meme)
+  * [Goof](#goof)
+  * [Administrative](#administrative)
    * [Misc](#misc)
 * [Roles](#roles)
 
