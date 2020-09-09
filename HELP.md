@@ -22,7 +22,6 @@
 
 * [About the Project](#about-the-project)
 * [Commands](#Commands)
-  * [General](#prerequisites)
   * [Meme](#installation)
   * [Goof](#installation)
   * [Administrative](#installation)
@@ -36,4 +35,9 @@ Command Preifx: ```$``` (Is subject to change)
 * $stop - Stops bot from transmitting audio.
 * $leave - Kicks bot from voice channel.
 * $help - Displays help menu.
+
+  ### Meme
+  This section demonstrated how to submit triggerable memes.
+  
+  * $submit [trigger] [joke] [audio]
 
