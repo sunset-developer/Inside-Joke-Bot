@@ -99,7 +99,12 @@ sudo apt install python3-pip
 ```
 * mysql
 ```sh
-you must create a schema called comedibot
+You must create a schema called comedibot.
+```
+
+* mmpeg (Required for linux server)
+```sh
+sudo apt install mmpeg
 ```
 
 ### Installation
@@ -111,10 +116,6 @@ git clone https://github.com/sunset-developer/ComediBot.git
 2. Install pip packages
 ```sh
 pip3 install -r requirements.txt
-```
-3. Install mmpeg (Required for audio on linux)
-```sh
-sudo apt install mmpeg
 ```
 
 ## Usage
