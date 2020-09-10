@@ -24,11 +24,6 @@ async def on_ready():
 
 
 @bot.event
-async def on_disconnect():
-    await Tortoise.close_connections()
-
-
-@bot.event
 async def on_message(message):
     if not message.author.bot:
         if message.content[0] == bot.command_prefix and can_execute_commands(message.author, message.guild):
