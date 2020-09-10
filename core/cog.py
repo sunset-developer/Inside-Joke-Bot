@@ -17,7 +17,7 @@ class JokeCog(commands.Cog):
     @commands.command()
     async def submit(self, ctx, trigger_arg, meme_arg, audio_arg=None, nsfw=False):
         try:
-            await TriggeredMeme.create(guild_dids=ctx.guild.id, author_did=ctx.author.id, meme=meme_arg, audio=audio_arg,
+            await TriggeredMeme.create(guild_did=ctx.guild.id, author_did=ctx.author.id, meme=meme_arg, audio=audio_arg,
                                        trigger=to_lower_without_punc(trigger_arg), nsfw=nsfw)
             await ctx.send(':white_check_mark: **Submitted :)**')
         except OperationalError:
@@ -39,7 +39,8 @@ class JokeCog(commands.Cog):
 
     @commands.command()
     async def get(self, ctx, trigger_arg):
-        memes = await TriggeredMeme.filter(trigger=to_lower_without_punc(trigger_arg), guild_did=ctx.guild.id, deleted=False).all()
+        memes = await TriggeredMeme.filter(trigger=to_lower_without_punc(trigger_arg), guild_did=ctx.guild.id,
+                                           deleted=False)
         if not memes:
             await ctx.send(':x: **I cant find a meme that wasn\'t told :(**')
         else:
@@ -73,7 +74,7 @@ class GoofCog(commands.Cog):
 
     @commands.command()
     async def getgoof(self, ctx, mention: discord.User):
-        goofs = await Goof.filter(guild_did=ctx.guild.id, mention_did=mention.id, deleted=False).all()
+        goofs = await Goof.filter(guild_did=ctx.guild.id, mention_did=mention.id, deleted=False)
         if not goofs:
             await ctx.send(':x: **I cant find goofs that I don\'t know about :(**')
         else:
@@ -91,9 +92,8 @@ class AdminCog(commands.Cog):
     @has_permissions(manage_messages=True)
     @commands.command()
     async def fdelete(self, ctx, trigger_arg, mention: discord.User = None):
-        memes_query_set = TriggeredMeme.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg)).all()
-        memes = await memes_query_set.filter(author_did=mention.id).update(
-            deleted=True) if mention else await memes_query_set.update(deleted=True)
+        memes_query_set = TriggeredMeme.filter(guild_did=ctx.guild.id, deleted=False, trigger=to_lower_without_punc(trigger_arg))
+        memes = await memes_query_set.filter(author_did=mention.id).update(deleted=True) if mention else await memes_query_set.update(deleted=True)
         if not memes:
             await ctx.send(':x: **I cant delete a meme that doesn\'t exist :(**')
         else:
