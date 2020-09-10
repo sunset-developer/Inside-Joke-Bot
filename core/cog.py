@@ -42,9 +42,9 @@ class JokeCog(commands.Cog):
         memes = await TriggeredMeme.filter(trigger=to_lower_without_punc(trigger_arg), guild_did=ctx.guild.id,
                                            deleted=False)
         if not memes:
-            await ctx.send(':x: **I cant find a meme that wasn\'t told :(**')
+            await ctx.send(':x: **I cant find a meme that doesn\'t exist :(**')
         else:
-            meme_embed = discord.Embed(title='This meme has been told by:', color=discord.Color.dark_purple())
+            meme_embed = discord.Embed(title='This meme has been created by:', color=discord.Color.dark_purple())
             for meme in memes:
                 meme_embed.add_field(name=ctx.guild.get_member(int(meme.author_did)), value=meme.meme)
             await ctx.send(embed=meme_embed)
