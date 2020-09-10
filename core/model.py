@@ -12,7 +12,7 @@ class BaseModel(Model):
     id = fields.IntField(pk=True)
     uid = fields.UUIDField(default=uuid.uuid4())
     date_created = fields.DatetimeField(auto_now_add=True)
-    guild_did = fields.CharField(max_length=18, null=True)
+    guild_did = fields.TextField(max_length=18, null=True)
     author_did = fields.CharField(max_length=18, null=True)
     deleted = fields.BooleanField(default=False)
 
@@ -22,16 +22,16 @@ class BaseModel(Model):
 
 class Goof(BaseModel):
     mention_did = fields.CharField(max_length=18, null=True)
-    quote = fields.CharField(max_length=66)
+    quote = fields.CharField(max_length=255)
 
     class Meta:
         table = 'goof'
 
 
 class TriggeredMeme(BaseModel):
-    trigger = fields.CharField(max_length=66)
-    meme = fields.CharField(max_length=66)
-    audio = fields.CharField(null=True, max_length=66)
+    trigger = fields.CharField(max_length=255)
+    meme = fields.CharField(max_length=255)
+    audio = fields.CharField(null=True, max_length=255)
     nsfw = fields.BooleanField(default=False)
 
     class Meta:
