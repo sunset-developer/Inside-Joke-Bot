@@ -50,7 +50,7 @@ async def on_guild_join(guild):
 
 async def meme_check(message):
     content = to_lower_without_punc(message.content)
-    memes = await TriggeredMeme.filter(guild_did=message.guild.id, deleted=False).all()
+    memes = await TriggeredMeme.filter(guild_did=message.guild.id, deleted=False)
     for meme in memes:
         if meme.trigger in content:
             if meme.nsfw and not message.channel.is_nsfw():
