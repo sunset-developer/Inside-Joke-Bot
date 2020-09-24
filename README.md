@@ -94,7 +94,7 @@ sudo apt-get install python3-pip
 
 * mmpeg
 ```sh
-sudo apt-get install mmpeg
+sudo apt-get install ffmpeg
 ```
 
 
