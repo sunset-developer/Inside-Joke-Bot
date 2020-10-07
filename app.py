@@ -140,6 +140,7 @@ def setup():
     else:
         set_config(args)
 
+        
 if __name__ == '__main__':
     setup()
     init()
