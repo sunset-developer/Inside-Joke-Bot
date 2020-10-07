@@ -140,6 +140,6 @@ def setup():
     else:
         set_config(args)
 
-
-setup()
-init()
+if __name__ == '__main__':
+    setup()
+    init()
