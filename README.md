@@ -94,18 +94,11 @@ It is recommended to use a linux server to host Comedibot.
 sudo apt-get install python3-pip
 ```
 
-* mmpeg
-```sh
-sudo apt-get install ffmpeg
-```
-
-
 * mysql
 
 ```sh
 You must start a MySQL database and create a schema called comedibot.
 ```
-
 
 ### Installation
 
