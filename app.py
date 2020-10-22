@@ -1,14 +1,12 @@
 # Copyright (C) 2020  Aidan Stewart (sunset-developer)
 import argparse
-import asyncio
 import os
-import pyfiglet
 from configparser import ConfigParser
-from discord import ClientException
+import pyfiglet
 from discord.ext import commands
 from tortoise import Tortoise
 from core.cog import JokeCog, UtilCog, GoofCog, AdminCog
-from core.model import YTDLSource, TriggeredMeme
+from core.model import TriggeredMeme
 from core.util import to_lower_without_punc, can_trigger_memes, can_execute_commands
 
 config_file = 'config.ini'
@@ -51,28 +49,6 @@ async def meme_check(message):
             if meme.nsfw and not message.channel.is_nsfw():
                 return
             await message.channel.send(meme.meme)
-            if message.author.voice is not None and meme.audio is not None:
-                await play_meme_audio(meme, message.author.voice.channel)
-
-
-async def play_meme_audio(meme, channel):
-    try:
-        await channel.connect()
-    except ClientException:
-        pass
-    for client in bot.voice_clients:
-        if client.channel is channel:
-            filename, player = await YTDLSource.from_url(meme.audio)
-            client.play(player, after=lambda e: os.remove(filename))
-
-
-async def disconnect_from_voice_when_alone():
-    await bot.wait_until_ready()
-    while True:
-        for client in bot.voice_clients:
-            if len(client.channel.members) == 1:
-                await client.disconnect()
-        await asyncio.sleep(3600)
 
 
 async def db_init():
@@ -87,7 +63,6 @@ async def db_init():
 def init():
     config.read(config_file)
     bot.loop.create_task(db_init())
-    bot.loop.create_task(disconnect_from_voice_when_alone())
     bot.add_cog(AdminCog(bot))
     bot.add_cog(UtilCog(bot))
     bot.add_cog(JokeCog(bot))

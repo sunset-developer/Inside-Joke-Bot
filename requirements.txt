@@ -21,4 +21,3 @@ six==1.15.0
 tortoise-orm==0.16.14
 typing-extensions==3.7.4.3
 yarl==1.5.1
-youtube-dl==2020.9.6

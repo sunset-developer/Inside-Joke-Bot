@@ -15,9 +15,9 @@ class JokeCog(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def submit(self, ctx, trigger_arg, meme_arg, audio_arg=None, nsfw=False):
+    async def submit(self, ctx, trigger_arg, meme_arg, nsfw=False):
         try:
-            await TriggeredMeme.create(guild_did=ctx.guild.id, author_did=ctx.author.id, meme=meme_arg, audio=audio_arg,
+            await TriggeredMeme.create(guild_did=ctx.guild.id, author_did=ctx.author.id, meme=meme_arg,
                                        trigger=to_lower_without_punc(trigger_arg), nsfw=nsfw)
             await ctx.send(':white_check_mark: **Submitted :)**')
         except OperationalError:
@@ -25,8 +25,8 @@ class JokeCog(commands.Cog):
             await ctx.send(':x: **An error occurred, please try again :(**')
 
     @commands.command()
-    async def submitnsfw(self, ctx, trigger_arg, meme_arg, audio_arg='None'):
-        await self.submit(ctx, trigger_arg, meme_arg, audio_arg, True)
+    async def submitnsfw(self, ctx, trigger_arg, meme_arg):
+        await self.submit(ctx, trigger_arg, meme_arg, True)
 
     @commands.command()
     async def delete(self, ctx, trigger_arg):
