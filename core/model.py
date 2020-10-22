@@ -28,7 +28,6 @@ class Goof(BaseModel):
 class TriggeredMeme(BaseModel):
     trigger = fields.CharField(max_length=255)
     meme = fields.CharField(max_length=255)
-    audio = fields.CharField(null=True, max_length=255)
     nsfw = fields.BooleanField(default=False)
 
     class Meta:

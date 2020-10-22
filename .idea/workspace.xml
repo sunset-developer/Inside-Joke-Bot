@@ -22,9 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="removal of mmpeg">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="change help">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603335311996</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="change help">
+      <created>1603335459091</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1603335459091</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +437,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="requirements.txt" />
     <MESSAGE value="audio fix" />
     <MESSAGE value="Lots of changes" />
     <MESSAGE value="sqlite database" />
@@ -455,7 +461,8 @@
     <MESSAGE value="removal of audio" />
     <MESSAGE value="removal of audio in help" />
     <MESSAGE value="removal of mmpeg" />
-    <option name="LAST_COMMIT_MESSAGE" value="removal of mmpeg" />
+    <MESSAGE value="change help" />
+    <option name="LAST_COMMIT_MESSAGE" value="change help" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598914313138">
@@ -526,12 +533,12 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="449" y="154" width="1287" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1599686828300" />
-    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603335314555">
+    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603335462144">
       <screen x="0" y="41" width="1920" height="971" />
     </state>
     <state x="278" y="255" width="528" height="577" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1599777918377" />
     <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.985@0.27.3840.985" timestamp="1599003888337" />
-    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971/1920.0.1920.1080@0.41.1920.971" timestamp="1603335314555" />
+    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971/1920.0.1920.1080@0.41.1920.971" timestamp="1603335462144" />
     <state x="741" y="434" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599768068909">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
