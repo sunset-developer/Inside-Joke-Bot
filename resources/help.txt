@@ -3,8 +3,8 @@
 **More Commands:** <https://github.com/sunset-developer/ComediBot/blob/master/HELP.md>
 **Argument Key:** `[Mandatory] (Optional)`
 >>> ~~---------------~~:tools: Basic Commands :tools:~~----------------~~
-**submit** `[trigger] [meme] (audio)`
-**submitnsfw** `[trigger] [meme] (audio)`
+**submit** `[trigger] [meme]`
+**submitnsfw** `[trigger] [meme]`
 **delete** `[trigger]`
 **get** `[trigger]`
 **stop**
