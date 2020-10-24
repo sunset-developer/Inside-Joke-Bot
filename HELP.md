@@ -7,7 +7,7 @@
     The meme bot that's personal. 
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=Nkprrm17Rbs">View Demo</a>
     ·
     <a href="https://github.com/sunset-developer/ComediBot/issues">Report Bug</a>
     ·

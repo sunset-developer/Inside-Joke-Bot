@@ -7,5 +7,3 @@
 **submitnsfw** `[trigger] [meme]`
 **delete** `[trigger]`
 **get** `[trigger]`
-**stop**
-**leave**
