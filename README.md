@@ -50,6 +50,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* [Images](#images)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -76,6 +77,16 @@ Comedibot is capable of being used in large servers due to administrator command
 So, would you rather a lame, probably unfunny, and personality free meme bot? Or do you want the next best thing to bring your friends and your community together with personalized humor and memes.
 
 Personalized, Customized, Comedibot.
+
+## Images
+
+![alt text](https://github.com/sunset-developer/ComediBot/blob/master/images/comedibot1.png)
+
+![alt text](https://github.com/sunset-developer/ComediBot/blob/master/images/comedibot2.png)
+
+![alt text](https://github.com/sunset-developer/ComediBot/blob/master/images/comedibot3.png)
+
+![alt text](https://github.com/sunset-developer/ComediBot/blob/master/images/comedibot4.png)
 
 
 <!-- GETTING STARTED -->
