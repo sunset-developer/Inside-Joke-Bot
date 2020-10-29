@@ -1,6 +1,7 @@
 # Copyright (C) 2020  Aidan Stewart (sunset-developer)
 import argparse
 import os
+import uuid
 from configparser import ConfigParser
 import pyfiglet
 from discord.ext import commands
