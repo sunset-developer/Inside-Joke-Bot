@@ -6,7 +6,7 @@ from discord.ext import commands
 from discord.ext.commands import has_permissions
 from tortoise.exceptions import OperationalError
 
-from core.model import TriggeredMeme, Goof
+from core.models import TriggeredMeme, Goof
 from core.util import to_lower_without_punc
 
 

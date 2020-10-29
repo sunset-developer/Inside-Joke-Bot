@@ -8,7 +8,7 @@ from tortoise.models import Model
 class BaseModel(Model):
     id = fields.UUIDField(pk=True)
     date_created = fields.DatetimeField(auto_now_add=True)
-    guild_did = fields.TextField(max_length=18, null=True)
+    guild_did = fields.CharField(max_length=18, null=True)
     author_did = fields.CharField(max_length=18, null=True)
     deleted = fields.BooleanField(default=False)
 

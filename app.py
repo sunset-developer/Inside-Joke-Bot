@@ -5,8 +5,8 @@ from configparser import ConfigParser
 import pyfiglet
 from discord.ext import commands
 from tortoise import Tortoise
-from core.cog import JokeCog, UtilCog, GoofCog, AdminCog
-from core.model import TriggeredMeme
+from core.cogs import JokeCog, UtilCog, GoofCog, AdminCog
+from core.models import TriggeredMeme
 from core.util import to_lower_without_punc, can_trigger_memes, can_execute_commands
 
 config_file = 'config.ini'
@@ -117,5 +117,5 @@ def setup():
 
         
 if __name__ == '__main__':
-    setup()
+    zsetup()
     init()
