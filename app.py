@@ -56,7 +56,7 @@ async def db_init():
     password = config['DEFAULT']['dbpassword']
     endpoint = config['DEFAULT']['dbendpoint']
     await Tortoise.init(db_url='mysql://{0}:{1}@{2}/{3}'.format(username, password, endpoint, 'comedibot'),
-                        modules={"models": ['core.model']})
+                        modules={"models": ['core.models']})
     await Tortoise.generate_schemas()
 
 

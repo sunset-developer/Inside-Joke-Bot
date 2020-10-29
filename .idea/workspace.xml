@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="id fix">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/cogs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603670304881</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="did fix">
+      <created>1603929947758</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1603929947758</updated>
+    </task>
+    <task id="LOCAL-00049" summary="fix">
+      <created>1603930076488</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1603930076488</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sqlite database" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="goof" />
     <MESSAGE value="cmd" />
@@ -470,7 +481,6 @@
     <MESSAGE value="administrator and role changes" />
     <MESSAGE value="fixes" />
     <MESSAGE value="max length" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fixes, again" />
     <MESSAGE value="created" />
     <MESSAGE value="removal of audio" />
@@ -479,7 +489,9 @@
     <MESSAGE value="change help" />
     <MESSAGE value="new images" />
     <MESSAGE value="id fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="id fix" />
+    <MESSAGE value="did fix" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598914313138">
@@ -554,13 +566,13 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="449" y="154" width="1287" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1599686828300" />
-    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603670320199">
+    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603930079284">
       <screen x="0" y="41" width="1920" height="971" />
     </state>
     <state x="278" y="255" width="528" height="577" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1599777918377" />
     <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.985@0.27.3840.985" timestamp="1599003888337" />
     <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971/1920.0.1920.1080@0.41.1920.971" timestamp="1603335462144" />
-    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971@0.41.1920.971" timestamp="1603670320199" />
+    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971@0.41.1920.971" timestamp="1603930079284" />
     <state x="741" y="442" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603670316929">
       <screen x="0" y="41" width="1920" height="971" />
     </state>
