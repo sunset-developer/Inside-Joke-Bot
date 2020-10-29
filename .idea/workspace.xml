@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="fix">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/help.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591212294219</updated>
-    </task>
-    <task id="LOCAL-00002" summary="init commit">
-      <created>1592257540055</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1592257540055</updated>
     </task>
     <task id="LOCAL-00003" summary="init commit">
       <created>1592258356464</created>
@@ -451,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603930173203</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="bug fix">
+      <created>1603932681614</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1603932681614</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor changes" />
     <MESSAGE value="goof" />
     <MESSAGE value="cmd" />
     <MESSAGE value="admincog" />
@@ -492,7 +490,8 @@
     <MESSAGE value="id fix" />
     <MESSAGE value="did fix" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598914313138">
