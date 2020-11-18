@@ -13,6 +13,7 @@ from core.util import to_lower_without_punc, can_trigger_memes, can_execute_comm
 config_file = 'config.ini'
 
 config = ConfigParser()
+arg = argparse.ArgumentParser('Comedibot')
 bot = commands.Bot(help_command=None, command_prefix=None)
 
 

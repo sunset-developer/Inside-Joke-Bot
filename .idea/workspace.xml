@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="1.0.1">
+    <list default="true" id="533a4ae8-1a96-46e8-9c9e-7de9bd6e460a" name="Default Changelist" comment="unique">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591212294219</updated>
-    </task>
-    <task id="LOCAL-00004" summary="init commit">
-      <created>1592258956401</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1592258956401</updated>
     </task>
     <task id="LOCAL-00005" summary="jwofij">
       <created>1592281963453</created>
@@ -451,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603932713396</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="unique">
+      <created>1605736426334</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1605736426335</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cmd" />
     <MESSAGE value="admincog" />
     <MESSAGE value="readme" />
     <MESSAGE value="clean" />
@@ -492,7 +490,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.1" />
+    <MESSAGE value="unique" />
+    <option name="LAST_COMMIT_MESSAGE" value="unique" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="177" width="1084" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598914313138">
@@ -571,10 +570,10 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="449" y="154" width="1287" height="737" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1599686828300" />
-    <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603932715614">
-      <screen x="0" y="41" width="1920" height="971" />
+    <state x="278" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605736427590">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="278" y="255" width="528" height="577" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1599777918377" />
+    <state x="278" y="255" width="528" height="577" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1605736427590" />
     <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.3840.985@0.27.3840.985" timestamp="1599003888337" />
     <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971/1920.0.1920.1080@0.41.1920.971" timestamp="1603335462144" />
     <state x="278" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/0.41.1920.971@0.41.1920.971" timestamp="1603932715614" />
@@ -608,12 +607,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app.py</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
