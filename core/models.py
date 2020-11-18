@@ -7,7 +7,7 @@ from tortoise.models import Model
 
 class BaseModel(Model):
     id = fields.IntField(pk=True)
-    uid = fields.UUIDField(max_length=36, default=uuid.uuid4)
+    uid = fields.UUIDField(unique=True, max_length=36, default=uuid.uuid4)
     date_created = fields.DatetimeField(auto_now_add=True)
     guild_did = fields.CharField(max_length=18, null=True)
     author_did = fields.CharField(max_length=18, null=True)

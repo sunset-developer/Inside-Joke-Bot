@@ -11,7 +11,7 @@ from core.models import TriggeredMeme
 from core.util import to_lower_without_punc, can_trigger_memes, can_execute_commands
 
 config_file = 'config.ini'
-arg = argparse.ArgumentParser(description='Comedibot Configuration')
+
 config = ConfigParser()
 bot = commands.Bot(help_command=None, command_prefix=None)
 
